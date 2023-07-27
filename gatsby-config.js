@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Diogo Torres Correia`,
-    shortTitle: `Diogo Correia`,
+    title: `Jan Szczekulski`,
+    shortTitle: `Jan Szczekulski`,
     description: `Hey, I'm Diogo Torres Correia from Portugal. I love programming, running, taking photos and learning new things!`,
-    author: `@diogotc2002`,
-    siteUrl: 'https://diogotc.com',
+    author: `@szczekulskij`,
+    siteUrl: 'http://jan-cs.com',
   },
   plugins: [
     `gatsby-plugin-top-layout`,
@@ -30,8 +30,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Diogo Torres Correia`,
-        short_name: `Diogo Correia`,
+        name: `Jan Szczekulski`,
+        short_name: `Jan Szczekulski`,
         start_url: `/`,
         background_color: `#1b1b1b`,
         theme_color: `#1b1b1b`,

@@ -60,24 +60,8 @@ const Footer = ({ homepage }) => {
               <Typography variant='body2' component='li'>
                 Email:{' '}
                 <span className={classes.lightText}>
-                  <a href='mailto:me@diogotc.com' data-umami-event='mail-social-footer'>
-                    me@diogotc.com
-                  </a>
-                </span>
-              </Typography>
-              <Typography variant='body2' component='li'>
-                Discord: <span className={classes.lightText}>DiogoCorreia#7295</span>
-              </Typography>
-              <Typography variant='body2' component='li'>
-                Twitter:{' '}
-                <span className={classes.lightText}>
-                  <a
-                    href='https://twitter.com/diogotc2002'
-                    rel='noopener noreferrer'
-                    target='_blank'
-                    data-umami-event='twitter-social-footer'
-                  >
-                    @diogotc2002
+                  <a href='mailto:szczekulskij@gmail.com' data-umami-event='mail-social-footer'>
+                  szczekulskij@gmail.com
                   </a>
                 </span>
               </Typography>

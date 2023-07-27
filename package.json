@@ -1,9 +1,9 @@
 {
   "name": "dtc-website",
   "private": true,
-  "description": "Diogo Torres Correia's personal website",
+  "description": "Jan Szczekulski's personal website",
   "version": "3.0.0",
-  "author": "Diogo Correia <me@diogotc.com>",
+  "author": "Jan Szczekulski <szczekulskij@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
@@ -56,9 +56,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/diogotcorreia/dtc-website"
+    "url": "https://github.com/szczekulskij/new-cv-react"
   },
   "bugs": {
-    "url": "https://github.com/diogotcorreia/dtc-website/issues"
+    "url": "https://github.com/szczekulskij/new-cv-react/issues"
   }
 }

@@ -3,13 +3,10 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/styles';
 import classnames from 'classnames';
 import React, { Component } from 'react';
-import DiscordIcon from '../assets/discord.svg';
 import GitHubIcon from '../assets/github.svg';
 import MailIcon from '../assets/gmail.svg';
 import InstagramIcon from '../assets/instagram.svg';
-import SteamIcon from '../assets/steam.svg';
-import StravaIcon from '../assets/strava.svg';
-import TwitterIcon from '../assets/twitter.svg';
+import LinkedIcon from '../assets/linkedin.svg';
 import ProfileImage from './profileImage';
 
 const styles = (theme) => ({
@@ -64,52 +61,35 @@ class Splash extends Component {
         <div className={classes.container}>
           <ProfileImage className={classes.picture} />
           <Typography variant='h1' className={classnames(classes.text, classes.title)}>
-            Diogo Correia
+            Jan Szczekulski
           </Typography>
           <Typography variant='h4' className={classnames(classes.text, classes.subtitle)}>
             Student, Developer &amp; Runner
           </Typography>
           <div className={classes.icons}>
             <Icon
-              tooltip='diogotcorreia'
+              tooltip='szczekulskij'
               component={<GitHubIcon className={classes.icon} />}
-              href='https://github.com/diogotcorreia'
+              href='https://github.com/szczekulskij'
               analyticsEvent='github'
             />
             <Icon
-              tooltip='@diogotc2002'
-              component={<TwitterIcon className={classes.icon} />}
-              href='https://twitter.com/diogotc2002'
-              analyticsEvent='twitter'
-            />
-            <Icon
-              tooltip='DiogoCorreia#7295'
-              component={<DiscordIcon className={classes.icon} />}
-              analyticsEvent='discord'
-            />
-            <Icon
-              tooltip='Diogo Correia'
-              component={<StravaIcon className={classes.icon} />}
-              href='https://www.strava.com/athletes/22762930'
-              analyticsEvent='strava'
-            />
-            <Icon
-              tooltip='rexcantor64'
-              component={<SteamIcon className={classes.icon} />}
-              href='https://steamcommunity.com/id/rexcantor64'
-              analyticsEvent='steam'
-            />
-            <Icon
-              tooltip='@diogotc2002'
-              component={<InstagramIcon className={classes.icon} />}
-              href='https://www.instagram.com/diogotc2002/'
-              analyticsEvent='instagram'
-            />
-            <Icon
-              tooltip='me@diogotc.com'
-              component={<MailIcon className={classes.icon} />}
-              href='mailto:me@diogotc.com'
+              tooltip='linkedin'
+              component={<LinkedIcon className={classes.icon} />}
+              href='szczekulskij@gmail.com'
               analyticsEvent='mail'
+            />
+            <Icon
+              tooltip='email'
+              component={<MailIcon className={classes.icon} />}
+              href='https://www.linkedin.com/in/jan-szczekulski-272ab615a/'
+              analyticsEvent='linkedin'
+            />
+            <Icon
+              tooltip='@jan_szczekulski'
+              component={<InstagramIcon className={classes.icon} />}
+              href='https://www.instagram.com/jan_szczekulski/'
+              analyticsEvent='instagram'
             />
           </div>
         </div>

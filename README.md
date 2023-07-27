@@ -3,7 +3,7 @@ You can find a live version at [jan-cs.com](http://jan-cs.com/).
 
 
 ## Running website locally and debugging
-* install dependencies - `npm config set legacy-peer-deps true && npm i && npm install node-sass@latest && npm update && npm install` # This worked for me
+* install dependencies - `npm config set legacy-peer-deps true && npm i && npm install node-sass@latest && npm update && npm install` # This worked for me, I know commands are repeating, same should be achievable via just running `npm update`
 * build - `gatsby build`
 * start" - `npm run develop`
 * serve - `gatsby serve`

@@ -1,8 +1,6 @@
-# Diogo Correia's Personal Website
+# Jan Szczekulski's personal website
 
-![Website Screenshot](https://github.com/diogotcorreia/dtc-website/blob/master/.gh/site_screenshot.png?raw=true)
-
-You can find a live version at [diogotc.com](https://diogotc.com).
+You can find a live version at [jan-cs.com](http://jan-cs.com/).
 
 ## Frameworks and packages used
 

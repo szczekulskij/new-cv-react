@@ -2,7 +2,7 @@
 title: "Ambroziak's Dermatology Clinic"
 subtitle: 'Research Assistant'
 date: 'June 2021 - Present'
-order: 15
+order: 1000000
 iconName: 'ambroziak_beauty_clinic'
 background: '#f8f7f5'
 foreground: '#fff'

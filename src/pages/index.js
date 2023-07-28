@@ -42,13 +42,13 @@ const IndexPage = ({ data }) => {
           />
         </Container>
       </Box>
-      <SectionTitle title='Portfolio' id='portfolio' />
+      {/* <SectionTitle title='Portfolio' id='portfolio' /> */}
       <Box className={classes.section}>
         <Container>
           <Typography className={classes.subsectionTitle} variant='h5'>
-            My top projects
+            Placeholder for Programming & Languages Experience
           </Typography>
-          <TopProjects topProjects={data.topProjects.nodes} />
+          {/* <TopProjects topProjects={data.topProjects.nodes} /> */}
           <Typography className={classes.subsectionTitle} variant='h5'>
             Timeline
           </Typography>

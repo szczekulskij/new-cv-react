@@ -1,10 +1,10 @@
 ---
-title: 'DSI @ Técnico'
-subtitle: 'Research Initiation Scholarship'
+title: "Ambroziak's Dermatology Clinic"
+subtitle: 'Research Assistant'
 date: 'April 2021'
 order: 15
-iconName: 'tecnico'
-background: '#009de0'
+iconName: 'ambroziak_beauty_clinic'
+background: '#f8f7f5'
 foreground: '#fff'
 ---
 

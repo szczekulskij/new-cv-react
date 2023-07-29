@@ -90,13 +90,13 @@
 .vertical-timeline-element-icon svg {
   fill: currentColor;
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
   position: relative;
   left: 50%;
   top: 50%;
-  margin-left: -12px;
-  margin-top: -12px;
+  margin-left: -20px;
+  margin-top: -20px;
 }
 
 @media only screen and (min-width: 1170px) {

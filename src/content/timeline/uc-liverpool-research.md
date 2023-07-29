@@ -9,3 +9,5 @@ foreground: '#fff'
 ---
 
 Worked on finding ways to increase the efficiency of geometric reconstruction of nanowires through the application of Convolutional Neural Networks (CNNs)
+
+Tech Stack: Python (Numpy, TensorFlow)

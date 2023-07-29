@@ -105,6 +105,7 @@ export const query = graphql`
           iconName
           background
           foreground
+          techstack
         }
       }
     }

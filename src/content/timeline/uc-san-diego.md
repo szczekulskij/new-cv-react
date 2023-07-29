@@ -1,11 +1,12 @@
 ---
 title: "UC San Diego"
-subtitle: 'Computer Science Masters (AI specialization)'
+subtitle: 'Computer Science Masters (AI)'
 date: 'September 2023 - Present'
 order: 5
 iconName: 'uc_san_diego'
 background: '#000000'
 foreground: '#fff'
+techstack: "lol"
 ---
 
 Starting my CS masters soon : )

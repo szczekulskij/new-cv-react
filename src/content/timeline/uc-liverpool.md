@@ -6,6 +6,7 @@ order: 0
 iconName: 'uni_liverpool'
 background: 'white'
 foreground: '#fff'
+techstack: "lol"
 ---
 
 At university of Liverpool I've completed joint degree in Mathematics & Computer Science.

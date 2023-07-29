@@ -6,6 +6,7 @@ order: 1
 iconName: 'uni_liverpool'
 background: 'white'
 foreground: '#fff'
+techstack: "lol"
 ---
 
 Worked on finding ways to increase the efficiency of geometric reconstruction of nanowires through the application of Convolutional Neural Networks (CNNs)

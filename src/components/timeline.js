@@ -24,6 +24,9 @@ const Timeline = ({ data }) => {
             <Typography variant='h6' className='vertical-timeline-element-subtitle'>
               {item.frontmatter.subtitle}
             </Typography>
+            {/* <Typography variant='h6' className='vertical-timeline-element-subtitle'>
+              {item.frontmatter.techstack}
+            </Typography> */}
             <div dangerouslySetInnerHTML={{ __html: item.html }} />
           </VerticalTimelineElement>
         );

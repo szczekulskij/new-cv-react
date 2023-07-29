@@ -6,7 +6,7 @@ order: 5
 iconName: 'uc_san_diego'
 background: '#000000'
 foreground: '#fff'
-techstack: "lol"
+techstack: ""
 ---
 
 Starting my CS masters soon : )

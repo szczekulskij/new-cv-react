@@ -18,15 +18,9 @@ const Timeline = ({ data }) => {
             }}
             icon={<Icon />}
           >
-            <Typography variant='h5' className='vertical-timeline-element-title'>
-              {item.frontmatter.title}
-            </Typography>
-            <Typography variant='h6' className='vertical-timeline-element-subtitle'>
-              {item.frontmatter.subtitle}
-            </Typography>
-            {/* <Typography variant='h6' className='vertical-timeline-element-subtitle'>
-              {item.frontmatter.techstack}
-            </Typography> */}
+            <Typography variant='h5' className='vertical-timeline-element-title'>{item.frontmatter.title}</Typography>
+            <Typography variant='h6' className='vertical-timeline-element-subtitle'>{item.frontmatter.subtitle}</Typography>
+            <Typography variant='text' className='vertical-timeline-element-subtitle'>{item.frontmatter.techstack}</Typography>
             <div dangerouslySetInnerHTML={{ __html: item.html }} />
           </VerticalTimelineElement>
         );

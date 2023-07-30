@@ -44,7 +44,7 @@ const IndexPage = ({ data }) => {
         </Container>
       </Box>
       {/* <SectionTitle title='Portfolio' id='portfolio' /> */}
-      <SkillProgressSection title='Portfolio' id='portfolio' />
+      <SkillProgressSection/>
       <Box className={classes.section}>
         <Container>
           {/* <Typography className={classes.subsectionTitle} variant='h5'>Placeholder for Programming & Languages Experience</Typography> */}

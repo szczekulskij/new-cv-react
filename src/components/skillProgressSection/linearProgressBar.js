@@ -27,7 +27,7 @@ LinearProgressWithLabel.propTypes = {
   value: PropTypes.number.isRequired,
 };
 
-export default function LinearProgress() {
+export default function LinearProgressBar() {
   const [progress, setProgress] = React.useState(10);
 
   React.useEffect(() => {

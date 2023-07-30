@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/styles';
 import React from 'react';
 import { Container, Grid, Typography } from '@material-ui/core';
-// import LinearProgressBar from './linearProgressBar';
+import LinearProgressBar from './linearProgressBar';
 
 const useStyles = makeStyles({
   root: {
@@ -26,20 +26,19 @@ const SkillProgressSection = () => {
     <Container>
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6}>
-            <Typography color="#00ff00" variant='h5' className={classes.header}>Contact me</Typography>
+            <Typography color="#00ff00" variant='h5' className={classes.header}>Frameworks & Tools</Typography>
             <ul className={classes.list}>
+
               {/* <Typography variant='body2' component='li'>
                 Email:{' '}
                 <span className={classes.lightText}>
-                  <a href='mailto:szczekulskij@gmail.com' data-umami-event='mail-social-footer'>
-                  szczekulskij@gmail.com
-                  </a>
+                  <a href='mailto:szczekulskij@gmail.com' data-umami-event='mail-social-footer'>szczekulskij@gmail.com</a>
                 </span>
               </Typography> */}
             </ul>
           </Grid>
           <Grid item xs={12} sm={6}>
-            <Typography variant='h5' className={classes.header}>Site map</Typography>
+            <Typography variant='h5' className={classes.header}>Languages</Typography>
             <ul className={classes.list}>
               {/* <Typography variant='body2' component='li' className={classes.sitemapLink}>
                 {homepage ? (

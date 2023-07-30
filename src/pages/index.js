@@ -7,6 +7,7 @@ import SectionTitle from '../components/sectionTitle';
 import Seo from '../components/seo';
 import Splash from '../components/splash';
 import Timeline from '../components/timeline/timeline';
+import SkillProgressSection from '../components/skillProgressSection/skillProgressSection';
 import TopProjects from '../components/topProjects';
 
 const useStyles = makeStyles((theme) => ({
@@ -43,15 +44,12 @@ const IndexPage = ({ data }) => {
         </Container>
       </Box>
       {/* <SectionTitle title='Portfolio' id='portfolio' /> */}
+      <SkillProgressSection title='Portfolio' id='portfolio' />
       <Box className={classes.section}>
         <Container>
-          <Typography className={classes.subsectionTitle} variant='h5'>
-            Placeholder for Programming & Languages Experience
-          </Typography>
+          {/* <Typography className={classes.subsectionTitle} variant='h5'>Placeholder for Programming & Languages Experience</Typography> */}
           {/* <TopProjects topProjects={data.topProjects.nodes} /> */}
-          <Typography className={classes.subsectionTitle} variant='h5'>
-            Timeline
-          </Typography>
+          <Typography className={classes.subsectionTitle} variant='h5'>Timeline</Typography>
           <Timeline data={data.timeline.nodes} />
         </Container>
       </Box>

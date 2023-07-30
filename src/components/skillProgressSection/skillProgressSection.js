@@ -27,7 +27,8 @@ const SkillProgressSection = () => {
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6}>
             <Typography color="#00ff00" variant='h5' className={classes.header}>Frameworks & Tools</Typography>
-            <ul className={classes.list}>
+            <ul className={classes.list} colour="white">
+                <LinearProgressBar progress={50} name={"some tool"}/>
 
               {/* <Typography variant='body2' component='li'>
                 Email:{' '}

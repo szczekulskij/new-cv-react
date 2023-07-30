@@ -7,7 +7,7 @@ const Timeline = ({ data }) => {
   return (
     <VerticalTimeline>
       {data.map((item) => {
-        let Icon = require(`../assets/${item.frontmatter.iconName}.svg`);
+        let Icon = require(`../../assets/${item.frontmatter.iconName}.svg`);
         return (
           <VerticalTimelineElement
             key={item.frontmatter.title}

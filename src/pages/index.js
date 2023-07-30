@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 import SectionTitle from '../components/sectionTitle';
 import Seo from '../components/seo';
 import Splash from '../components/splash';
-import Timeline from '../components/timeline';
+import Timeline from '../components/timeline/timeline';
 import TopProjects from '../components/topProjects';
 
 const useStyles = makeStyles((theme) => ({

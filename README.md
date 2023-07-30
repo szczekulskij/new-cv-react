@@ -15,3 +15,6 @@ You can find a live version at [jan-cs.com](http://jan-cs.com/).
 - [react-tsparticles](https://github.com/matteobruni/tsparticles)
 - [react-vertical-timeline-component](https://github.com/stephane-monnot/react-vertical-timeline)
 - ... and more!
+
+## Coding in this repo
+* You should utilize already existing designs created for [material-ui](https://mui.com/material-ui/icons/)

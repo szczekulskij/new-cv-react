@@ -39,7 +39,7 @@ const LanguagesDict = {
     "SQL" : 85,
     "Java" : 80,
     "Shell" : 50,
-    "js, css & htlm" : 50,
+    "Javascript, CSS & HTML" : 50,
 }
 
 

@@ -23,10 +23,10 @@ export default function LinearProgressBar(props) {
   const classes = useStyles();
   return (
     <Container>
-    <Typography variant="overline" color="white" >{props.name}</Typography>
-    <Box sx={{ display: 'flex', alignItems: 'center', paddingBottom:"6px", paddingTop:"0px", marginTop:"0px"}}>
+    <Typography variant="body2" color="white" >{props.name}</Typography>
+    <Box sx={{ display: 'flex', alignItems: 'center', paddingBottom:"11px"}}>
       <Box sx={{ width: '88%', mr: 1 }}>
-        <LinearProgress variant="determinate" value={props.progress} sx={{height: 7}}/>
+        <LinearProgress variant="determinate" value={props.progress} sx={{height: 10}}/>
       </Box>
       <Box sx={{ minWidth: 3}}>
         <Typography variant="body2" color="white">{`${Math.round(props.progress,)}%`}</Typography>

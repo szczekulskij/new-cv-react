@@ -21,7 +21,7 @@ const useStyles = makeStyles({
 });
 
 const FrameWorkAndToolsDict = {
-    // "name" : progress (int)
+    // "name"(string) : progress (int)
     "Git" : 90,
     "Pandas, numpy, matplotlib" : 85,
     "Docker" : 70,

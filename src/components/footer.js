@@ -82,16 +82,9 @@ const Footer = ({ homepage }) => {
                 )}
               </Typography>
               <Typography variant='body2' component='li' className={classes.sitemapLink}>
-                {homepage ? (
-                  <AnchorLink offset='64' href='#portfolio'>
-                    Portfolio
-                  </AnchorLink>
-                ) : (
-                  <Link to='/#portfolio'>Portfolio</Link>
-                )}
               </Typography>
               <Typography variant='body2' component='li' className={classes.sitemapLink}>
-                <Link to='/impossiblelist'>Impossible List</Link>
+                <Link to='/portfolio'>Portfolio</Link>
               </Typography>
             </ul>
           </Grid>
@@ -100,11 +93,11 @@ const Footer = ({ homepage }) => {
       <div className={classes.credits}>
         <Container className={classes.footerBottom}>
           <Typography variant='body2' className={classes.creditsText}>
-            © 2017-{new Date().getFullYear()} Diogo Torres Correia
+            © 2017-{new Date().getFullYear()} Jan Szczekulski
           </Typography>
           <Typography variant='body2'>
             <a
-              href='https://github.com/diogotcorreia/dtc-website'
+              href='https://github.com/szczekulskij/new-cv-react'
               rel='noopener noreferrer'
               target='_blank'
               data-umami-event='source-code-footer'

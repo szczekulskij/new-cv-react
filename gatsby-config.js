@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Jan Szczekulski`,
     shortTitle: `Jan Szczekulski`,
-    description: `Hey, I'm Diogo Torres Correia from Portugal. I love programming, running, taking photos and learning new things!`,
+    description: ``,
     author: `@szczekulskij`,
     siteUrl: 'http://jan-cs.com',
   },
@@ -60,7 +60,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://diogotc.com',
+        host: 'http://jan-cs.com/',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },

@@ -49,18 +49,16 @@ const Header = ({ siteTitle, homepage }) => {
           >
             About me
           </Button>
-          <Button
+          {/* <Button
             component={homepage ? AnchorLink : Link}
             offset='64'
-            href='#portfolio'
-            to='/#portfolio'
+            href='portfolio'
+            to='/portfolio'
             color='inherit'
           >
             Portfolio
-          </Button>
-          <Button component={Link} to='/impossiblelist' color='inherit'>
-            Impossible List
-          </Button>
+          </Button> */}
+          <Button component={Link} to='/Portfolio' color='inherit'>Portfolio</Button>
         </Hidden>
       </Toolbar>
     </AppBar>

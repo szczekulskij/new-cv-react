@@ -65,7 +65,7 @@ class MobileNavigation extends Component {
               </ListItemIcon>
               <ListItemText>About me</ListItemText>
             </ListItem>
-            <ListItem
+            {/* <ListItem
               component={homepage ? AnchorLink : Link}
               href='#portfolio'
               to='/#portfolio'
@@ -77,17 +77,17 @@ class MobileNavigation extends Component {
                 <PortfolioIcon />
               </ListItemIcon>
               <ListItemText>Portfolio</ListItemText>
-            </ListItem>
+            </ListItem> */}
             <ListItem
               component={Link}
-              to='/impossiblelist'
+              to='/portfolio'
               button
               activeClassName={classes.listItemActive}
             >
               <ListItemIcon>
-                <ImpossibleListIcon />
+              <PortfolioIcon />
               </ListItemIcon>
-              <ListItemText>Impossible List</ListItemText>
+              <ListItemText>Portfolio</ListItemText>
             </ListItem>
           </List>
         </Drawer>

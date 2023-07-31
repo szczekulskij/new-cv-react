@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const SecondPage = ({ data }) => {
+const PortfolioPage = ({ data }) => {
   const classes = useStyles();
   return (
     <Layout>
@@ -54,4 +54,4 @@ export const query = graphql`
   }
 `;
 
-export default SecondPage;
+export default PortfolioPage;

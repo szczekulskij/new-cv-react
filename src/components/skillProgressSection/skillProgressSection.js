@@ -4,13 +4,6 @@ import { Container, Grid, Typography } from '@material-ui/core';
 import LinearProgressBar from './linearProgressBar';
 
 const useStyles = makeStyles({
-  root: {
-    padding: '75px 0',
-    color: "#FFFFFF",
-    display: 'flex',
-    alignItems: 'center',
-    flexDirection: 'column',
-  },
   smallHeader: {
     fontSize: '1.65rem',
     lineHeight: '110%',
@@ -26,6 +19,8 @@ const useStyles = makeStyles({
     textAlign: 'center', 
     m: 1,
     paddingBottom: "20px"
+  },
+  list: {
   }
 });
 
@@ -63,23 +58,21 @@ const SkillProgressSection = () => {
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6}>
             <Typography variant='h4' className={classes.smallHeader}>Frameworks & Tools</Typography>
-            <ul className={classes.list} colour="white">
-            {Object.entries(FrameWorkAndToolsDict).map(([name, progress]) => (
-                <LinearProgressBar progress={progress} name={name}/>
-            ))}
+            <ul className={classes.list}>
+              {Object.entries(FrameWorkAndToolsDict).map(([name, progress]) => (
+                  <LinearProgressBar progress={progress} name={name}/>
+              ))}
             </ul>
           </Grid>
           <Grid item xs={12} sm={6}>
             <Typography variant='h4' className={classes.smallHeader}>Languages</Typography>
             <ul className={classes.list}>
-            {Object.entries(LanguagesDict).map(([name, progress]) => (
-                <LinearProgressBar progress={progress} name={name}/>
-            ))}
+              {Object.entries(LanguagesDict).map(([name, progress]) => (
+                  <LinearProgressBar progress={progress} name={name}/>
+              ))}
             </ul>
           </Grid>
         </Grid>
-        {/* add padding */}
-
       </Container>
   );
 };

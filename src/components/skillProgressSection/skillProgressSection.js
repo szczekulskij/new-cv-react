@@ -11,17 +11,26 @@ const useStyles = makeStyles({
     alignItems: 'center',
     flexDirection: 'column',
   },
-  header: {
-    fontSize: '1.45rem',
+  smallHeader: {
+    fontSize: '1.65rem',
     lineHeight: '110%',
     margin: '.82rem 0 .656rem 0',
     fontWeight: 400,
     color: "#FFFFFF",
+  },
+  bigHeader: {
+    lineHeight: '110%',
+    margin: '.82rem 0 .656rem 0',
+    fontWeight: 400,
+    color: "#FFFFFF",
+    textAlign: 'center', 
+    m: 1,
+    paddingBottom: "20px"
   }
 });
 
 const FrameWorkAndToolsDict = {
-    // "name"(string) : progress (int)
+    // name(string) : progress(int)
     "Git" : 90,
     "Pandas, numpy, matplotlib" : 85,
     "Docker" : 70,
@@ -34,7 +43,7 @@ const FrameWorkAndToolsDict = {
 
 
 const LanguagesDict = {
-    // "name" : progress (int)
+    // name(string) : progress(int)
     "Python" : 95,
     "SQL" : 85,
     "Java" : 80,
@@ -49,10 +58,11 @@ const LanguagesDict = {
 const SkillProgressSection = () => {
   const classes = useStyles();
   return (
-    <Container>
+    <Container sx={{padding:"500px"}}>
+      <Typography variant='h3' className={classes.bigHeader}>My expertise</Typography>
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6}>
-            <Typography color="#00ff00" variant='h5' className={classes.header}>Frameworks & Tools</Typography>
+            <Typography variant='h4' className={classes.smallHeader}>Frameworks & Tools</Typography>
             <ul className={classes.list} colour="white">
             {Object.entries(FrameWorkAndToolsDict).map(([name, progress]) => (
                 <LinearProgressBar progress={progress} name={name}/>
@@ -60,7 +70,7 @@ const SkillProgressSection = () => {
             </ul>
           </Grid>
           <Grid item xs={12} sm={6}>
-            <Typography variant='h5' className={classes.header}>Languages</Typography>
+            <Typography variant='h4' className={classes.smallHeader}>Languages</Typography>
             <ul className={classes.list}>
             {Object.entries(LanguagesDict).map(([name, progress]) => (
                 <LinearProgressBar progress={progress} name={name}/>
@@ -68,6 +78,8 @@ const SkillProgressSection = () => {
             </ul>
           </Grid>
         </Grid>
+        {/* add padding */}
+
       </Container>
   );
 };

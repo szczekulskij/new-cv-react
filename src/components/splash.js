@@ -76,14 +76,14 @@ class Splash extends Component {
             <Icon
               tooltip='linkedin'
               component={<LinkedIcon className={classes.icon} />}
-              href='szczekulskij@gmail.com'
-              analyticsEvent='mail'
+              href='https://www.linkedin.com/in/jan-szczekulski-272ab615a/'
+              analyticsEvent='linkedin'
             />
             <Icon
               tooltip='email'
               component={<MailIcon className={classes.icon} />}
-              href='https://www.linkedin.com/in/jan-szczekulski-272ab615a/'
-              analyticsEvent='linkedin'
+              href='mailto:szczekulskij@gmail.com'
+              analyticsEvent='mail'
             />
             <Icon
               tooltip='@jan_szczekulski'

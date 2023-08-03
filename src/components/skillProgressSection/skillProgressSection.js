@@ -9,18 +9,19 @@ const useStyles = makeStyles({
     lineHeight: '110%',
     margin: '.82rem 0 .656rem 0',
     fontWeight: 400,
-    color: "#FFFFFF",
+    color: "#000000",
   },
   bigHeader: {
     lineHeight: '110%',
     margin: '.82rem 0 .656rem 0',
     fontWeight: 400,
-    color: "#FFFFFF",
+    color: "#000000",
     textAlign: 'center', 
     m: 1,
     paddingBottom: "20px"
   },
   list: {
+    color: "#000000",
   }
 });
 
@@ -53,7 +54,7 @@ const LanguagesDict = {
 const SkillProgressSection = () => {
   const classes = useStyles();
   return (
-    <Container sx={{padding:"500px"}}>
+    <Container>
       <Typography variant='h3' className={classes.bigHeader}>My expertise</Typography>
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6}>

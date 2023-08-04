@@ -37,19 +37,14 @@ const IndexPage = ({ data }) => {
       <Splash />
       <Box className={classes.section} id='aboutme'>
         <Container>
-          <div
-            className={classes.aboutme}
-            dangerouslySetInnerHTML={{ __html: data.aboutme.markdown.html }}
-          />
+          <div className={classes.aboutme} dangerouslySetInnerHTML={{ __html: data.aboutme.markdown.html }} />
         </Container>
       </Box>
       <DownloadCVSection/>
-      {/* <SkillProgressSection/> */}
       <Box className={classes.section}>
         <Container>
-        {/* <TopProjects topProjects={data.topProjects.nodes} /> */}
-        <SkillProgressSection/>
-          <Typography className={classes.subsectionTitle} variant='h5'>Timeline</Typography>
+          {/* <TopProjects topProjects={data.topProjects.nodes} /> */}
+          <SkillProgressSection/>
           <Timeline data={data.timeline.nodes} />
         </Container>
       </Box>

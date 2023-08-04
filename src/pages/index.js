@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/styles';
 import { graphql } from 'gatsby';
 import React from 'react';
 import Layout from '../components/layout';
-import SectionTitle from '../components/sectionTitle';
+import DownloadCVSection from '../components/downloadCVSection';
 import Seo from '../components/seo';
 import Splash from '../components/splash';
 import Timeline from '../components/timeline/timeline';
@@ -43,12 +43,12 @@ const IndexPage = ({ data }) => {
           />
         </Container>
       </Box>
-      {/* <SectionTitle title='Portfolio' id='portfolio' /> */}
+      <DownloadCVSection/>
       {/* <SkillProgressSection/> */}
       <Box className={classes.section}>
         <Container>
+        {/* <TopProjects topProjects={data.topProjects.nodes} /> */}
         <SkillProgressSection/>
-          {/* <TopProjects topProjects={data.topProjects.nodes} /> */}
           <Typography className={classes.subsectionTitle} variant='h5'>Timeline</Typography>
           <Timeline data={data.timeline.nodes} />
         </Container>

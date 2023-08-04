@@ -44,7 +44,9 @@ const IndexPage = ({ data }) => {
       <Box className={classes.section}>
         <Container>
           {/* <TopProjects topProjects={data.topProjects.nodes} /> */}
+          <Typography className={classes.subsectionTitle} variant='h5'>My Skills:</Typography>
           <SkillProgressSection/>
+          <Typography className={classes.subsectionTitle} variant='h5'>Timeline</Typography>
           <Timeline data={data.timeline.nodes} />
         </Container>
       </Box>

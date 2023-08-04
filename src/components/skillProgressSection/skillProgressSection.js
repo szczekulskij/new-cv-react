@@ -11,15 +11,15 @@ const useStyles = makeStyles({
     fontWeight: 400,
     color: "#000000",
   },
-  bigHeader: {
-    lineHeight: '110%',
-    margin: '.82rem 0 .656rem 0',
-    fontWeight: 400,
-    color: "#000000",
-    textAlign: 'center', 
-    m: 1,
-    paddingBottom: "20px"
-  },
+  // bigHeader: {
+  //   lineHeight: '110%',
+  //   margin: '.82rem 0 .656rem 0',
+  //   fontWeight: 400,
+  //   color: "#000000",
+  //   textAlign: 'center', 
+  //   m: 1,
+  //   paddingBottom: "20px"
+  // },
   list: {
     color: "#000000",
   }
@@ -55,10 +55,10 @@ const SkillProgressSection = () => {
   const classes = useStyles();
   return (
     <Container>
-      <Typography variant='h3' className={classes.bigHeader}>My expertise</Typography>
+      {/* <Typography variant='h3' className={classes.bigHeader}>My expertise</Typography> */}
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6}>
-            <Typography variant='h4' className={classes.smallHeader}>Frameworks & Tools</Typography>
+            <Typography variant='h1' className={classes.smallHeader}>Frameworks & Tools</Typography>
             <ul className={classes.list}>
               {Object.entries(FrameWorkAndToolsDict).map(([name, progress]) => (
                   <LinearProgressBar progress={progress} name={name}/>
@@ -66,7 +66,7 @@ const SkillProgressSection = () => {
             </ul>
           </Grid>
           <Grid item xs={12} sm={6}>
-            <Typography variant='h4' className={classes.smallHeader}>Languages</Typography>
+            <Typography variant='h1' className={classes.smallHeader}>Languages</Typography>
             <ul className={classes.list}>
               {Object.entries(LanguagesDict).map(([name, progress]) => (
                   <LinearProgressBar progress={progress} name={name}/>

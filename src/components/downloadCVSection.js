@@ -30,7 +30,7 @@ const DownloadCVSection = ({ title, ...props }) => {
   return (
     <div className={classes.root} {...props}>
       <Typography variant='h4' className={classes.title}>Download my CV here:</Typography>
-      <Button className={classes.button} variant="outlined" href="/assets/resume.pdf" title="Download CV">CV</Button>
+      <Button className={classes.button} variant="outlined" href="/resume.pdf" title="Download CV">CV</Button>
     </div>
   );
 };

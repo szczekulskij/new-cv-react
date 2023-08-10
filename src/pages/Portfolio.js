@@ -2,7 +2,7 @@ import { Box, Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import { graphql } from 'gatsby';
 import React from 'react';
-import Category from '../components/impossiblelist/category';
+import TopProjects from '../components/TopProjects';
 import Splash from '../components/impossiblelist/splash';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
@@ -24,9 +24,7 @@ const PortfolioPage = ({ data }) => {
       <Splash />
       <Box className={classes.section}>
         <Container>
-          {data.json.nodes.map((category) => (
-            <Category category={category} key={category.name} />
-          ))}
+          <TopProjects topProjects={data.topProjects.nodes} />
         </Container>
       </Box>
     </Layout>
@@ -35,20 +33,27 @@ const PortfolioPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    json: allImpossiblelistJson {
+    topProjects: allMarkdownRemark(
+      filter: {
+        fileAbsolutePath: { regex: "/topprojects/" }
+        internal: { type: { eq: "MarkdownRemark" } }
+      }
+      sort: { fields: frontmatter___order, order: ASC }
+    ) {
       nodes {
-        goals {
-          edits {
-            date
-            link
-            links
-            value
-          }
+        html
+        frontmatter {
           name
-          type
-          subgoals
+          link
+          calltoaction
+          background
+          color
+          icon {
+            childImageSharp {
+              gatsbyImageData(layout: FIXED, placeholder: BLURRED, width: 80, height: 80)
+            }
+          }
         }
-        name
       }
     }
   }

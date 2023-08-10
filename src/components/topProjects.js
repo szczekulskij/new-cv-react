@@ -3,35 +3,6 @@ import { makeStyles } from '@material-ui/styles';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import React from 'react';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    flexFlow: 'row wrap',
-    justifyContent: 'center',
-    alignContent: 'center',
-  },
-}));
-
-const TopProjects = ({ topProjects }) => {
-  const classes = useStyles();
-  return (
-    <div className={classes.root}>
-      {topProjects.map((project) => (
-        <Project
-          key={project.frontmatter.name}
-          name={project.frontmatter.name}
-          content={project.html}
-          icon={project.frontmatter.icon.childImageSharp.gatsbyImageData}
-          link={project.frontmatter.link}
-          calltoaction={project.frontmatter.calltoaction}
-          background={project.frontmatter.background}
-          color={project.frontmatter.color}
-        />
-      ))}
-    </div>
-  );
-};
-
 const useStylesProject = makeStyles((theme) => ({
   root: (props) => ({
     flex: '1 1 auto',
@@ -79,5 +50,35 @@ const Project = ({ name, content, icon, link, calltoaction, background, color })
     </Card>
   );
 };
+
+const useStyles = makeStyles(() => ({
+  root: {
+    display: 'flex',
+    flexFlow: 'row wrap',
+    justifyContent: 'center',
+    alignContent: 'center',
+  },
+}));
+
+const TopProjects = ({ topProjects }) => {
+  const classes = useStyles();
+  return (
+    <div className={classes.root}>
+      {topProjects.map((project) => (
+        <Project
+          key={project.frontmatter.name}
+          name={project.frontmatter.name}
+          content={project.html}
+          icon={project.frontmatter.icon.childImageSharp.gatsbyImageData}
+          link={project.frontmatter.link}
+          calltoaction={project.frontmatter.calltoaction}
+          background={project.frontmatter.background}
+          color={project.frontmatter.color}
+        />
+      ))}
+    </div>
+  );
+};
+
 
 export default TopProjects;

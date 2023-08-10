@@ -1,6 +1,7 @@
 import { makeStyles } from '@material-ui/styles';
 import React from 'react';
 import { Button, Typography } from '@material-ui/core';
+import resumePDF from '../assets/resume.pdf';
 
 const useStyles = makeStyles({
   root: {
@@ -29,7 +30,7 @@ const DownloadCVSection = ({ title, ...props }) => {
   return (
     <div className={classes.root} {...props}>
       <Typography variant='h4' className={classes.title}>Download my CV here:</Typography>
-      <Button className={classes.button} variant="outlined" href="src/assets/resume.pdf" title="Download CV">CV</Button>
+      <Button className={classes.button} variant="outlined" href="/assets/resume.pdf" title="Download CV">CV</Button>
     </div>
   );
 };

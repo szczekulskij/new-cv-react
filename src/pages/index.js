@@ -8,7 +8,6 @@ import Seo from '../components/seo';
 import Splash from '../components/splash';
 import Timeline from '../components/timeline/timeline';
 import SkillProgressSection from '../components/skillProgressSection/skillProgressSection';
-import TopProjects from '../components/topProjects';
 
 const useStyles = makeStyles((theme) => ({
   section: {
@@ -43,7 +42,6 @@ const IndexPage = ({ data }) => {
       <DownloadCVSection/>
       <Box className={classes.section}>
         <Container>
-          {/* <TopProjects topProjects={data.topProjects.nodes} /> */}
           <Typography className={classes.subsectionTitle} variant='h5'>My Skills:</Typography>
           <SkillProgressSection/>
           <Typography className={classes.subsectionTitle} variant='h5'>Timeline</Typography>
@@ -59,29 +57,6 @@ export const query = graphql`
     aboutme: file(name: { eq: "aboutme" }, sourceInstanceName: { eq: "content" }) {
       markdown: childMarkdownRemark {
         html
-      }
-    }
-    topProjects: allMarkdownRemark(
-      filter: {
-        fileAbsolutePath: { regex: "/topprojects/" }
-        internal: { type: { eq: "MarkdownRemark" } }
-      }
-      sort: { fields: frontmatter___order, order: ASC }
-    ) {
-      nodes {
-        html
-        frontmatter {
-          name
-          link
-          calltoaction
-          background
-          color
-          icon {
-            childImageSharp {
-              gatsbyImageData(layout: FIXED, placeholder: BLURRED, width: 80, height: 80)
-            }
-          }
-        }
       }
     }
     timeline: allMarkdownRemark(

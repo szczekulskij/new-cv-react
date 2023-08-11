@@ -20,8 +20,8 @@ const useStyles = makeStyles({
     backgroundColor: '#fff',
     display: 'flex',
     alignItems: 'center',
-    height: "50px",
-    width: "75px"
+    height: '50px',
+    width: '75px',
   },
 });
 
@@ -29,8 +29,12 @@ const DownloadCVSection = ({ title, ...props }) => {
   const classes = useStyles();
   return (
     <div className={classes.root} {...props}>
-      <Typography variant='h4' className={classes.title}>Download my CV here:</Typography>
-      <Button className={classes.button} variant="outlined" href="/resume.pdf" title="Download CV">CV</Button>
+      <Typography variant='h4' className={classes.title}>
+        Download my CV here:
+      </Typography>
+      <Button className={classes.button} variant='outlined' href='/resume.pdf' title='Download CV'>
+        CV
+      </Button>
     </div>
   );
 };

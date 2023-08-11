@@ -85,7 +85,7 @@ class MobileNavigation extends Component {
               activeClassName={classes.listItemActive}
             >
               <ListItemIcon>
-              <PortfolioIcon />
+                <PortfolioIcon />
               </ListItemIcon>
               <ListItemText>Portfolio</ListItemText>
             </ListItem>

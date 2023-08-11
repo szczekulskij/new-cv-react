@@ -13,7 +13,7 @@ const useStylesProject = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     margin: 10,
-    backgroundColor: "#000000",
+    backgroundColor: '#000000',
     color: theme.palette.getContrastText(props.background),
   }),
   image: {
@@ -25,21 +25,33 @@ const useStylesProject = makeStyles((theme) => ({
   },
 }));
 
-const Project = ({ name, content, photo, GHlink, technologies, secondLink, secondLinkCallToAction, background, color }) => {
+const Project = ({
+  name,
+  content,
+  photo,
+  GHlink,
+  technologies,
+  secondLink,
+  secondLinkCallToAction,
+  background,
+  color,
+}) => {
   const classes = useStylesProject({ background, color });
-  let button
+  let button;
   if (secondLink) {
-    button = <Button
-                size='small'
-                component='a'
-                href={secondLink}
-                target='_blank'
-                rel='noopener'
-                disabled={!secondLink}
-                color='inherit'
-              >
-                {secondLinkCallToAction}
-              </Button>
+    button = (
+      <Button
+        size='small'
+        component='a'
+        href={secondLink}
+        target='_blank'
+        rel='noopener'
+        disabled={!secondLink}
+        color='inherit'
+      >
+        {secondLinkCallToAction}
+      </Button>
+    );
   }
 
   return (
@@ -98,6 +110,5 @@ const TopProjects = ({ topProjects }) => {
     </div>
   );
 };
-
 
 export default TopProjects;

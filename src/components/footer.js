@@ -61,7 +61,7 @@ const Footer = ({ homepage }) => {
                 personal Email:{' '}
                 <span className={classes.lightText}>
                   <a href='mailto:szczekulskij@gmail.com' data-umami-event='mail-social-footer'>
-                  szczekulskij@gmail.com
+                    szczekulskij@gmail.com
                   </a>
                 </span>
               </Typography>
@@ -69,15 +69,18 @@ const Footer = ({ homepage }) => {
                 Uni Email:{' '}
                 <span className={classes.lightText}>
                   <a href='mailto:jszczekulski@ucsd.edu' data-umami-event='mail2-social-footer'>
-                  jszczekulski@ucsd.edu
+                    jszczekulski@ucsd.edu
                   </a>
                 </span>
               </Typography>
               <Typography variant='body2' component='li'>
                 Linkedin:{' '}
                 <span className={classes.lightText}>
-                  <a href='https://www.linkedin.com/in/jan-szczekulski-272ab615a/' data-umami-event='linkedin-social-footer'>
-                  linkedin
+                  <a
+                    href='https://www.linkedin.com/in/jan-szczekulski-272ab615a/'
+                    data-umami-event='linkedin-social-footer'
+                  >
+                    linkedin
                   </a>
                 </span>
               </Typography>

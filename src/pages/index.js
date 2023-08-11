@@ -36,15 +36,22 @@ const IndexPage = ({ data }) => {
       <Splash />
       <Box className={classes.section} id='aboutme'>
         <Container>
-          <div className={classes.aboutme} dangerouslySetInnerHTML={{ __html: data.aboutme.markdown.html }} />
+          <div
+            className={classes.aboutme}
+            dangerouslySetInnerHTML={{ __html: data.aboutme.markdown.html }}
+          />
         </Container>
       </Box>
-      <DownloadCVSection/>
+      <DownloadCVSection />
       <Box className={classes.section}>
         <Container>
-          <Typography className={classes.subsectionTitle} variant='h5'>My Skills:</Typography>
-          <SkillProgressSection/>
-          <Typography className={classes.subsectionTitle} variant='h5'>Timeline</Typography>
+          <Typography className={classes.subsectionTitle} variant='h5'>
+            My Skills:
+          </Typography>
+          <SkillProgressSection />
+          <Typography className={classes.subsectionTitle} variant='h5'>
+            Timeline
+          </Typography>
           <Timeline data={data.timeline.nodes} />
         </Container>
       </Box>

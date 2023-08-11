@@ -72,3 +72,5 @@ yarn-error.log
 .vscode/
 public/
 package-lock.json
+how_to_ssh.txt
+ssh_key.pem

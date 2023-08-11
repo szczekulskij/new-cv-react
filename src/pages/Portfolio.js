@@ -2,7 +2,7 @@ import { Box, Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import { graphql } from 'gatsby';
 import React from 'react';
-import TopProjects from '../components/TopProjects';
+import TopProjects from '../components/topProjects';
 import Splash from '../components/impossiblelist/splash';
 import Layout from '../components/layout';
 import Seo from '../components/seo';

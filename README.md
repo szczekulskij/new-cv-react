@@ -6,13 +6,15 @@ You can find a live version at [jan-cs.com](http://jan-cs.com/).
 * node - v20.5.0
 * npm - 9.8.0
 * install dependencies - `npm config set legacy-peer-deps true && npm i && npm install node-sass@latest && npm update && npm install`
+* install gatsby cli - `npm install -g gatsby-cli`
+* install lintering - `npm install --save-dev eslint-plugin-prettier`
 
 ## Running website locally and debugging
 * `npm run develop` - start off your website quickly (eg. without compiling)
 * `gatsby build` - build your code (eg. compile your code into public folder)
 * `gatsby serve` - serve your built code
 * `gatsby clean` - remove your built code (eg. the one from /public folder)
-* `npm linter` - linter your repo
+* `npm linter` - linter your repo 
 
 ## Coding in this repo
 * You should utilize already existing designs created for [material-ui](https://mui.com/material-ui/icons/)

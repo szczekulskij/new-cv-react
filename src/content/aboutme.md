@@ -1,8 +1,3 @@
-**Hey!**
+**Hi there!**
 
-I'm Jan Szczekulski from Poland!  
-I love programming, toying with data as well as basketball and learning new cs-related knowledge
-I've had a chance to work as a data scientist, full stack engineer as well as an AI researcher.
-Feel free to get in touch or take a look at my past work below.
-
-(re-write this aye aye)
+I'm Jan Szczekulski, a Data Scientist, Full Stack Engineer(front & back!), and Researcher from Poland. Off the keyboard, I'm perfecting my basketball dribble and immersing myself in reads. Let's chat or explore my work below!

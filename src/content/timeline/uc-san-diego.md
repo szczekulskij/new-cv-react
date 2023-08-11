@@ -10,4 +10,4 @@ techstack: ""
 ---
 
 Starting my CS masters soon : )
-I'll be focusing on AI, enrolling in AI courses and hopefully joining an AI lab
+I'll be focusing on AI, enrolling in AI courses and hopefully joining an AI-oriented lab

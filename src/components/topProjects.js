@@ -47,8 +47,8 @@ const Project = ({ name, content, photo, GHlink, technologies, secondLink, secon
       <CardContent className={classes.content}>
         <GatsbyImage className={classes.image} image={photo} alt={name} />
         <Typography variant='h6'>{name}</Typography>
-        <Typography variant='h6'>{technologies}</Typography>
         <div dangerouslySetInnerHTML={{ __html: content }} />
+        <Typography variant='text'>{technologies}</Typography>
       </CardContent>
       <CardActions>
         <Button

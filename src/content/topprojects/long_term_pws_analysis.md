@@ -1,5 +1,5 @@
 ---
-name: Data analysis of Dermatology data
+name: Data analysis of pws
 order: 4
 photoName: ./photos/pws_analysis.png
 technologies: "Python, Pandas, Matplotlib"

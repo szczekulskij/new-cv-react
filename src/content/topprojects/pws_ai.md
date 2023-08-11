@@ -1,5 +1,5 @@
 ---
-name: Data analysis of Dermatology data
+name: AI treatment's prediction
 order: 5
 photoName: ./photos/pws_ai.jpeg
 technologies: "Python, Tensorflow, Fast.ai"

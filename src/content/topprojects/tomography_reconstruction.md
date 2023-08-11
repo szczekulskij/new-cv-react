@@ -1,5 +1,5 @@
 ---
-name: AI in Tomography Reconstruction
+name: AI in Tomography
 order: 2
 photoName: ./photos/tomography_reconstruction.png
 technologies: "Python, Tensorflow, Numpy"

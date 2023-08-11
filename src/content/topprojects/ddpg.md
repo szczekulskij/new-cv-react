@@ -1,5 +1,5 @@
 ---
-name: Improving DDPG RL algorithm
+name: Improving DDPG algorithm
 order: 3
 photoName: ./photos/ddpg.png
 technologies: "Python, PyTorch, Numpy"

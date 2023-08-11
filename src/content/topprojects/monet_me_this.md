@@ -1,5 +1,5 @@
 ---
-name: Personal Website
+name: Monet-me-this
 order: 6
 photoName: ./photos/monet.png
 technologies: "React, Python, TensorFlow, Java, SpringBoot"

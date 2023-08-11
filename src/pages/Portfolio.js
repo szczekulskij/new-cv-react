@@ -44,11 +44,12 @@ export const query = graphql`
         html
         frontmatter {
           name
-          link
-          calltoaction
+          GHlink
+          otherLink
           background
           color
-          icon {
+          technologies
+          photoName {
             childImageSharp {
               gatsbyImageData(layout: FIXED, placeholder: BLURRED, width: 80, height: 80)
             }

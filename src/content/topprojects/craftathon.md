@@ -1,9 +1,10 @@
 ---
 name: Craftathon
-icon: ./craftathon.png
 order: 1
-link: https://craftathon.org
-calltoaction: Visit Website
+photoName: ./tomography_reconstruction.png
+technologies: "Python, Tensorflow"
+GHlink: https://craftathon.org
+otherLink: Visit Website
 background: '#e91425'
 color: '#fff'
 ---

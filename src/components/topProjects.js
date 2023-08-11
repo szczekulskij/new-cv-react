@@ -25,26 +25,38 @@ const useStylesProject = makeStyles((theme) => ({
   },
 }));
 
-const Project = ({ name, content, icon, link, calltoaction, background, color }) => {
+const Project = ({ name, content, photo, GHlink, technologies, otherLink, background, color }) => {
   const classes = useStylesProject({ background, color });
   return (
     <Card className={classes.root}>
       <CardContent className={classes.content}>
-        <GatsbyImage className={classes.image} image={icon} alt={name} />
+        <GatsbyImage className={classes.image} image={photo} alt={name} />
         <Typography variant='h6'>{name}</Typography>
+        <Typography variant='h6'>{technologies}</Typography>
         <div dangerouslySetInnerHTML={{ __html: content }} />
       </CardContent>
       <CardActions>
         <Button
           size='small'
           component='a'
-          href={link}
+          href={GHlink}
           target='_blank'
           rel='noopener'
-          disabled={!link}
+          disabled={!GHlink}
           color='inherit'
         >
-          {calltoaction}
+          GitHub
+        </Button>
+        <Button
+          size='small'
+          component='a'
+          href={otherLink}
+          target='_blank'
+          rel='noopener'
+          disabled={!otherLink}
+          color='inherit'
+        >
+          Website link
         </Button>
       </CardActions>
     </Card>
@@ -69,9 +81,10 @@ const TopProjects = ({ topProjects }) => {
           key={project.frontmatter.name}
           name={project.frontmatter.name}
           content={project.html}
-          icon={project.frontmatter.icon.childImageSharp.gatsbyImageData}
-          link={project.frontmatter.link}
-          calltoaction={project.frontmatter.calltoaction}
+          photo={project.frontmatter.photoName.childImageSharp.gatsbyImageData}
+          GHlink={project.frontmatter.GHlink}
+          technologies={project.frontmatter.technologies}
+          otherLink={project.frontmatter.otherLink}
           background={project.frontmatter.background}
           color={project.frontmatter.color}
         />

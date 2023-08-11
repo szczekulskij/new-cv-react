@@ -2,7 +2,7 @@
 name: Personal Website
 order: 1
 photoName: ./photos/personal_website.png
-technologies: "React, Next.js, Gatsby, GraphQl"
+technologies: "React, Gatsby, GraphQl"
 GHlink: https://github.com/szczekulskij/new-cv-react
 secondLink: "http://jan-cs.com/"
 secondLinkCallToAction: "Visit Website"

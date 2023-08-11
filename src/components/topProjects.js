@@ -25,8 +25,23 @@ const useStylesProject = makeStyles((theme) => ({
   },
 }));
 
-const Project = ({ name, content, photo, GHlink, technologies, otherLink, background, color }) => {
+const Project = ({ name, content, photo, GHlink, technologies, secondLink, secondLinkCallToAction, background, color }) => {
   const classes = useStylesProject({ background, color });
+  let button
+  if (secondLink) {
+    button = <Button
+                size='small'
+                component='a'
+                href={secondLink}
+                target='_blank'
+                rel='noopener'
+                disabled={!secondLink}
+                color='inherit'
+              >
+                {secondLinkCallToAction}
+              </Button>
+  }
+
   return (
     <Card className={classes.root}>
       <CardContent className={classes.content}>
@@ -47,19 +62,7 @@ const Project = ({ name, content, photo, GHlink, technologies, otherLink, backgr
         >
           GitHub
         </Button>
-        { otherLink &&
-          <Button
-            size='small'
-            component='a'
-            href={otherLink}
-            target='_blank'
-            rel='noopener'
-            disabled={!otherLink}
-            color='inherit'
-          >
-            Website link
-          </Button>
-        }
+        {button}
       </CardActions>
     </Card>
   );
@@ -86,7 +89,8 @@ const TopProjects = ({ topProjects }) => {
           photo={project.frontmatter.photoName.childImageSharp.gatsbyImageData}
           GHlink={project.frontmatter.GHlink}
           technologies={project.frontmatter.technologies}
-          otherLink={project.frontmatter.otherLink}
+          secondLink={project.frontmatter.secondLink}
+          secondLinkCallToAction={project.frontmatter.secondLinkCallToAction}
           background={project.frontmatter.background}
           color={project.frontmatter.color}
         />

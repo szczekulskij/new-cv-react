@@ -45,7 +45,8 @@ export const query = graphql`
         frontmatter {
           name
           GHlink
-          otherLink
+          secondLink
+          secondLinkCallToAction
           background
           color
           technologies

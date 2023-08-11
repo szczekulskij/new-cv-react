@@ -58,33 +58,28 @@ const Footer = ({ homepage }) => {
             </Typography>
             <ul className={classes.list}>
               <Typography variant='body2' component='li'>
-                Email:{' '}
+                personal Email:{' '}
                 <span className={classes.lightText}>
                   <a href='mailto:szczekulskij@gmail.com' data-umami-event='mail-social-footer'>
                   szczekulskij@gmail.com
                   </a>
                 </span>
               </Typography>
-            </ul>
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <Typography variant='h5' className={classes.header}>
-              Site map
-            </Typography>
-            <ul className={classes.list}>
-              <Typography variant='body2' component='li' className={classes.sitemapLink}>
-                {homepage ? (
-                  <AnchorLink offset='64' href='#aboutme'>
-                    About me
-                  </AnchorLink>
-                ) : (
-                  <Link to='/#aboutme'>About me</Link>
-                )}
+              <Typography variant='body2' component='li'>
+                Uni Email:{' '}
+                <span className={classes.lightText}>
+                  <a href='mailto:jszczekulski@ucsd.edu' data-umami-event='mail2-social-footer'>
+                  jszczekulski@ucsd.edu
+                  </a>
+                </span>
               </Typography>
-              <Typography variant='body2' component='li' className={classes.sitemapLink}>
-              </Typography>
-              <Typography variant='body2' component='li' className={classes.sitemapLink}>
-                <Link to='/portfolio'>Portfolio</Link>
+              <Typography variant='body2' component='li'>
+                Linkedin:{' '}
+                <span className={classes.lightText}>
+                  <a href='https://www.linkedin.com/in/jan-szczekulski-272ab615a/' data-umami-event='linkedin-social-footer'>
+                  linkedin
+                  </a>
+                </span>
               </Typography>
             </ul>
           </Grid>
@@ -93,7 +88,7 @@ const Footer = ({ homepage }) => {
       <div className={classes.credits}>
         <Container className={classes.footerBottom}>
           <Typography variant='body2' className={classes.creditsText}>
-            © 2017-{new Date().getFullYear()} Jan Szczekulski
+            © 2023-{new Date().getFullYear()} Jan Szczekulski
           </Typography>
           <Typography variant='body2'>
             <a

@@ -47,17 +47,19 @@ const Project = ({ name, content, photo, GHlink, technologies, otherLink, backgr
         >
           GitHub
         </Button>
-        <Button
-          size='small'
-          component='a'
-          href={otherLink}
-          target='_blank'
-          rel='noopener'
-          disabled={!otherLink}
-          color='inherit'
-        >
-          Website link
-        </Button>
+        { otherLink &&
+          <Button
+            size='small'
+            component='a'
+            href={otherLink}
+            target='_blank'
+            rel='noopener'
+            disabled={!otherLink}
+            color='inherit'
+          >
+            Website link
+          </Button>
+        }
       </CardActions>
     </Card>
   );

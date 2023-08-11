@@ -4,7 +4,7 @@ order: 1
 photoName: ./tomography_reconstruction.png
 technologies: "Python, Tensorflow"
 GHlink: https://craftathon.org
-otherLink: Visit Website
+otherLink: ""
 background: '#e91425'
 color: '#fff'
 ---

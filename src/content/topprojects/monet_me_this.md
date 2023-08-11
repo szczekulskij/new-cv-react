@@ -2,7 +2,7 @@
 name: Monet-me-this
 order: 6
 photoName: ./photos/monet.png
-technologies: "React, Python, TensorFlow, Java, SpringBoot"
+technologies: "React, SpringBoot, TF"
 GHlink: https://github.com/szczekulskij/new-cv-react
 secondLink: "http://monet-me-this.com/"
 secondLinkCallToAction: "Visit Website"

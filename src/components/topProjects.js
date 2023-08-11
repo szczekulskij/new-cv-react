@@ -13,7 +13,7 @@ const useStylesProject = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     margin: 10,
-    backgroundColor: props.background,
+    backgroundColor: "#000000",
     color: theme.palette.getContrastText(props.background),
   }),
   image: {
@@ -47,8 +47,8 @@ const Project = ({ name, content, photo, GHlink, technologies, secondLink, secon
       <CardContent className={classes.content}>
         <GatsbyImage className={classes.image} image={photo} alt={name} />
         <Typography variant='h6'>{name}</Typography>
+        <Typography variant='overline'>Tech stack: {technologies}</Typography>
         <div dangerouslySetInnerHTML={{ __html: content }} />
-        <Typography variant='text'>{technologies}</Typography>
       </CardContent>
       <CardActions>
         <Button

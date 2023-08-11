@@ -2,7 +2,7 @@
 name: Data analysis of pws
 order: 4
 photoName: ./photos/pws_analysis.png
-technologies: "Python, Pandas, Matplotlib"
+technologies: "Pandas, Matplotlib"
 GHlink: https://github.com/szczekulskij/long-term-analysis-of-pws
 secondLink: "https://www.researchgate.net/publication/370138933_LONG_TERM_TREATMENT_OF_PWS_MIGHT_REQUIRE_A_NEW_DUAL_THERAPY_CONSISTING_OF_INDUCTION_AND_MAINTENANCE"
 secondLinkCallToAction: "Publication"

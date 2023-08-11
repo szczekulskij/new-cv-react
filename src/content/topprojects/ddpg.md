@@ -2,7 +2,7 @@
 name: Improving DDPG algorithm
 order: 3
 photoName: ./photos/ddpg.png
-technologies: "Python, PyTorch, Numpy"
+technologies: "PyTorch, Numpy"
 GHlink: https://github.com/szczekulskij/DDPG-reconstruction
 secondLink: ""
 secondLinkCallToAction: ""

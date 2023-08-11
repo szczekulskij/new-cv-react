@@ -2,7 +2,7 @@
 name: AI in Tomography
 order: 2
 photoName: ./photos/tomography_reconstruction.png
-technologies: "Python, Tensorflow, Numpy"
+technologies: "Tensorflow, Numpy"
 GHlink: https://github.com/szczekulskij/tomography-reconstruction-CNN
 secondLink: ""
 secondLinkCallToAction: "Publication"

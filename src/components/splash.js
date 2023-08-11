@@ -7,6 +7,7 @@ import GitHubIcon from '../assets/github.svg';
 import MailIcon from '../assets/gmail.svg';
 import InstagramIcon from '../assets/instagram.svg';
 import LinkedIcon from '../assets/linkedin.svg';
+import ResearchGateIcon from '../assets/research_gate.svg';
 import ProfileImage from './profileImage';
 
 const styles = (theme) => ({
@@ -90,6 +91,12 @@ class Splash extends Component {
               component={<InstagramIcon className={classes.icon} />}
               href='https://www.instagram.com/jan_szczekulski/'
               analyticsEvent='instagram'
+            />
+            <Icon
+              tooltip='researchGate'
+              component={<ResearchGateIcon className={classes.icon} />}
+              href='https://www.researchgate.net/profile/Jan-Szczekulski-2/research'
+              analyticsEvent='researchGate'
             />
           </div>
         </div>

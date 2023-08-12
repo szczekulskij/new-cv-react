@@ -73,7 +73,6 @@ const SkillProgressSection = () => {
                   <LinearProgressBar progress={progress} name={name}/>
               ))}
             </ul>
-            {/* <Typography variant="h5" xs = {{alignItems: 'center',}}> Placeholder for Portfolio re-direction?</Typography> */}
           </Grid>
         </Grid>
       </Container>

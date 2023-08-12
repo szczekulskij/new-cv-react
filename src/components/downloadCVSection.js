@@ -1,7 +1,6 @@
 import { makeStyles } from '@material-ui/styles';
 import React from 'react';
 import { Button, Typography } from '@material-ui/core';
-import resumePDF from '../assets/resume.pdf';
 
 const useStyles = makeStyles({
   root: {

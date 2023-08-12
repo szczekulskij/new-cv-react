@@ -14,7 +14,6 @@ import { Link } from 'gatsby';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import AboutMeIcon from '@material-ui/icons/PersonRounded';
 import PortfolioIcon from '@material-ui/icons/BookRounded';
-import ImpossibleListIcon from '@material-ui/icons/StarRounded';
 
 const styles = (theme) => ({
   menuButton: {
@@ -65,19 +64,6 @@ class MobileNavigation extends Component {
               </ListItemIcon>
               <ListItemText>About me</ListItemText>
             </ListItem>
-            {/* <ListItem
-              component={homepage ? AnchorLink : Link}
-              href='#portfolio'
-              to='/#portfolio'
-              offset='56'
-              button
-              onClick={this.toggleDrawer(false)}
-            >
-              <ListItemIcon>
-                <PortfolioIcon />
-              </ListItemIcon>
-              <ListItemText>Portfolio</ListItemText>
-            </ListItem> */}
             <ListItem
               component={Link}
               to='/portfolio'

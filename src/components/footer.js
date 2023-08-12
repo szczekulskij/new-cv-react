@@ -1,8 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { Container, Grid, Typography } from '@material-ui/core';
-import { Link } from 'gatsby';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const useStyles = makeStyles((theme) => ({
   root: {

@@ -29,3 +29,8 @@ You can find a live version at [jan-cs.com](http://jan-cs.com/).
 - [react-tsparticles](https://github.com/matteobruni/tsparticles)
 - [react-vertical-timeline-component](https://github.com/stephane-monnot/react-vertical-timeline)
 - ... and more!
+
+
+## Networking
+* This site has been deployed w. Netlify (amazing CI & CD! Autodeploy on pushing code changes to main). This deploys the site to this domain: (https://storied-rolypoly-2a6b90.netlify.app/)[https://storied-rolypoly-2a6b90.netlify.app/]
+* Bought `jan-cs.com` domain via `namecheap.com`, and re-directed it to netlify's url.

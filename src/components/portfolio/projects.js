@@ -3,8 +3,15 @@ import { makeStyles } from '@material-ui/styles';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import React from 'react';
 
-const useStylesProject = makeStyles((theme) => ({
-  root: (props) => ({
+const useStyles = makeStyles((theme) => ({
+  cardContainer: {
+    display: 'flex',
+    flexFlow: 'row wrap',
+    justifyContent: 'center',
+    alignContent: 'center',
+  },
+  card: {
+    background: theme.palette.primary.main,
     flex: '1 1 auto',
     [theme.breakpoints.down('xs')]: {
       maxWidth: 'initial',
@@ -13,9 +20,11 @@ const useStylesProject = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     margin: 10,
-    backgroundColor: '#000000',
-    color: theme.palette.getContrastText(props.background),
-  }),
+    color: theme.palette.getContrastText(theme.palette.primary.main),
+  },
+  cardActions: {
+    marginTop: 'auto',
+  },
   image: {
     margin: '0 auto 10px auto',
     display: 'block !important',
@@ -23,6 +32,11 @@ const useStylesProject = makeStyles((theme) => ({
   content: {
     flexGrow: 1,
   },
+  button: {
+    background: theme.palette.background.default,
+    color: theme.palette.getContrastText(theme.palette.background.default),
+  }
+
 }));
 
 const Project = ({
@@ -33,10 +47,8 @@ const Project = ({
   technologies,
   secondLink,
   secondLinkCallToAction,
-  background,
-  color,
 }) => {
-  const classes = useStylesProject({ background, color });
+  const classes = useStyles();
   let button;
   if (secondLink) {
     button = (
@@ -48,6 +60,7 @@ const Project = ({
         rel='noopener'
         disabled={!secondLink}
         color='inherit'
+        className={classes.button}
       >
         {secondLinkCallToAction}
       </Button>
@@ -55,14 +68,14 @@ const Project = ({
   }
 
   return (
-    <Card className={classes.root}>
-      <CardContent className={classes.content}>
+    <Card className={classes.card}>
+      <CardContent>
         <GatsbyImage className={classes.image} image={photo} alt={name} />
         <Typography variant='h6'>{name}</Typography>
         <Typography variant='overline'>Tech stack: {technologies}</Typography>
         <div dangerouslySetInnerHTML={{ __html: content }} />
       </CardContent>
-      <CardActions>
+      <CardActions className={classes.cardActions}>
         <Button
           size='small'
           component='a'
@@ -71,6 +84,7 @@ const Project = ({
           rel='noopener'
           disabled={!GHlink}
           color='inherit'
+          className={classes.button}
         >
           GitHub
         </Button>
@@ -80,19 +94,10 @@ const Project = ({
   );
 };
 
-const useStyles = makeStyles(() => ({
-  root: {
-    display: 'flex',
-    flexFlow: 'row wrap',
-    justifyContent: 'center',
-    alignContent: 'center',
-  },
-}));
-
 const TopProjects = ({ topProjects }) => {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
+    <div className={classes.cardContainer}>
       {topProjects.map((project) => (
         <Project
           key={project.frontmatter.name}

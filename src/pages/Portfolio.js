@@ -2,14 +2,14 @@ import { Box, Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import { graphql } from 'gatsby';
 import React from 'react';
+import Layout from '../components/layout';
 import TopProjects from '../components/portfolio/projects';
 import Splash from '../components/portfolio/splash';
-import Layout from '../components/layout';
 import Seo from '../components/seo';
 
 const useStyles = makeStyles((theme) => ({
   section: {
-    background: '#fff',
+    background: theme.palette.background.default,
     paddingTop: 50,
     paddingBottom: 24,
     boxShadow: theme.shadows[2],

@@ -56,7 +56,7 @@ const Footer = ({ homepage }) => {
             </Typography>
             <ul className={classes.list}>
               <Typography variant='body2' component='li'>
-                personal Email:{' '}
+                Personal Email:{' '}
                 <span className={classes.lightText}>
                   <a href='mailto:szczekulskij@gmail.com' data-umami-event='mail-social-footer'>
                     szczekulskij@gmail.com
@@ -64,7 +64,7 @@ const Footer = ({ homepage }) => {
                 </span>
               </Typography>
               <Typography variant='body2' component='li'>
-                Uni Email:{' '}
+                University Email:{' '}
                 <span className={classes.lightText}>
                   <a href='mailto:jszczekulski@ucsd.edu' data-umami-event='mail2-social-footer'>
                     jszczekulski@ucsd.edu

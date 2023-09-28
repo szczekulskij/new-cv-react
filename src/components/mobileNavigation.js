@@ -66,7 +66,7 @@ class MobileNavigation extends Component {
             </ListItem>
             <ListItem
               component={Link}
-              to='/portfolio'
+              to='/Portfolio'
               button
               activeClassName={classes.listItemActive}
             >

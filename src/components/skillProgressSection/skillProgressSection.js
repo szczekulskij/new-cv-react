@@ -45,7 +45,7 @@ const LanguagesDict = {
     "Java" : 80,
     "Shell" : 50,
     "Javascript, CSS & HTML" : 50,
-    "C++" : 20,
+    "C++" : 30,
 }
 
 

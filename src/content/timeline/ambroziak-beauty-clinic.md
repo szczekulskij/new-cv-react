@@ -1,6 +1,6 @@
 ---
 title: "Ambroziak's Dermatology Clinic"
-subtitle: 'Research Assistant (part-time)'
+subtitle: 'Research Collaboration'
 date: 'June 2021 - Present'
 order: 3
 iconName: 'ambroziak_beauty_clinic'

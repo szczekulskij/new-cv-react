@@ -34,4 +34,4 @@ You can find a live version at [jan-cs.com](http://jan-cs.com/).
 ## Networking
 * This site has been deployed w. (Netlify)[https://app.netlify.com/sites/storied-rolypoly-2a6b90/deploys] (amazing CI & CD! Auto-deploy on pushing code changes to main). 
 * Netlify deploys the site to this domain: (https://storied-rolypoly-2a6b90.netlify.app/)[https://storied-rolypoly-2a6b90.netlify.app/]
-* Bought `jan-cs.com` domain via `namecheap.com`, and set up DNS (via namecheap) to re-directed to netlify's url.
+* Bought `jan-cs.com` domain via `namecheap.com`, and set up DNS (via namecheap) to re-direct from `jan-cs.com` to netlify's url.

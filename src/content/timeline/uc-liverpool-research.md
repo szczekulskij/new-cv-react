@@ -1,6 +1,6 @@
 ---
 title: "Uni of Liverpool"
-subtitle: 'Research assistant (part-time)'
+subtitle: 'Research assistant/Collaboration'
 date: 'June 2020 - Aug 2020; August 2022 - Present'
 order: 1
 iconName: 'uni_liverpool'

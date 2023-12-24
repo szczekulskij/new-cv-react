@@ -1,5 +1,5 @@
 ---
-title: "Uni of Liverpool"
+title: "University of Liverpool"
 subtitle: 'Research assistant/Collaboration'
 date: 'June 2020 - Aug 2020; August 2022 - Present'
 order: 1

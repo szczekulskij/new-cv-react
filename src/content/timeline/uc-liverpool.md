@@ -1,5 +1,5 @@
 ---
-title: "Uni of Liverpool"
+title: "University of Liverpool"
 subtitle: 'Bachelors Degree (Math & CS)'
 date: 'September 2017 - May 2020'
 order: 0

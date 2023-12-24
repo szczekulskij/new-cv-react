@@ -1,7 +1,7 @@
 ---
 title: "University of Liverpool"
 subtitle: 'Research assistant/Collaboration'
-date: 'June 2020 - Aug 2020; August 2022 - Present'
+date: 'June 2020 - Aug 2020; August 2022 - September 2023'
 order: 1
 iconName: 'uni_liverpool'
 background: 'white'

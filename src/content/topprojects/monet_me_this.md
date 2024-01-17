@@ -4,7 +4,7 @@ order: 6
 photoName: ./photos/monet.png
 technologies: "React, SpringBoot, TF"
 GHlink: https://github.com/szczekulskij/new-cv-react
-secondLink: "http://monet-me-this.com/"
+secondLink: "http://monet-me-this.org/"
 secondLinkCallToAction: "Visit Website"
 background: '#e91425'
 color: '#fff'

@@ -44,7 +44,7 @@ const BlogPost = ({ blogPost }) => {
       <Link to={blogPost.fields.slug} className={classes.link}>
         <Typography variant="h4">{blogPost.frontmatter.title}</Typography>
       </Link>
-      <div dangerouslySetInnerHTML={{ __html: blogPost.html }} />
+      <Typography variant="body1">{blogPost.frontmatter.description}</Typography>
       <div className={classes.postMeta}>
         <Typography variant="body1" className={classes.date}>{format(new Date(blogPost.frontmatter.date), 'yyyy-MM-dd')}</Typography>
         <Typography variant="body1" className={classes.minRead}>{Math.ceil(blogPost.html.length / 1000)} min read</Typography>

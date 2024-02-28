@@ -50,6 +50,7 @@ export const query = graphql`
           background
           color
           technologies
+          blogName
           photoName {
             childImageSharp {
               gatsbyImageData(layout: FIXED, placeholder: BLURRED, width: 80, height: 80)

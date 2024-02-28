@@ -61,6 +61,7 @@ const Project = ({
   technologies,
   secondLink,
   secondLinkCallToAction,
+  blogName, // new prop
 }) => {
   const classes = useStyles();
   let button;
@@ -80,6 +81,9 @@ const Project = ({
       </Button>
     );
   }
+
+  // Generate blogLink based on blogName
+  const blogLink = blogName ? `/blog/${blogName.replace(/\s+/g, '-')}` : null;
 
   return (
     <Card className={classes.card}>
@@ -103,6 +107,19 @@ const Project = ({
           GitHub
         </Button>
         {button}
+        {blogLink && (
+          <Button
+            size='small'
+            component='a'
+            href={blogLink}
+            target='_blank'
+            rel='noopener'
+            color='inherit'
+            className={classes.button}
+          >
+            Blog Post
+          </Button>
+        )}
       </CardActions>
     </Card>
   );
@@ -124,6 +141,7 @@ const TopProjects = ({ topProjects }) => {
           secondLinkCallToAction={project.frontmatter.secondLinkCallToAction}
           background={project.frontmatter.background}
           color={project.frontmatter.color}
+          blogName={project.frontmatter.blogName}
         />
       ))}
     </div>

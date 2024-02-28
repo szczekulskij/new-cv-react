@@ -41,7 +41,7 @@ const BlogPost = ({ blogPost }) => {
 
   return (
     <Box my={4}>
-      <Link to={`/blog/${blogPost.frontmatter.title}`} className={classes.link}>
+      <Link to={blogPost.fields.slug} className={classes.link}>
         <Typography variant="h4">{blogPost.frontmatter.title}</Typography>
       </Link>
       <div dangerouslySetInnerHTML={{ __html: blogPost.html }} />

@@ -13,28 +13,42 @@ const useStyles = makeStyles((theme) => ({
   card: {
     background: theme.palette.primary.main,
     flex: '1 1 auto',
-    [theme.breakpoints.down('xs')]: {
-      maxWidth: 'initial',
-    },
     maxWidth: 350,
     display: 'flex',
     flexDirection: 'column',
-    margin: 10,
+    margin: 20, // Adjusted for better spacing
+    padding: 15, // Padding inside the card
     color: theme.palette.getContrastText(theme.palette.primary.main),
+    borderRadius: 8, // Rounded corners
+    boxShadow: '0px 4px 10px rgba(0,0,0,0.1)', // Shadow effect
+    transition: 'transform 0.3s ease, box-shadow 0.3s ease', // Smooth transition for hover effect
+    '&:hover': {
+      transform: 'translateY(-5px)',
+      boxShadow: '0px 6px 15px rgba(0,0,0,0.2)',
+    },
   },
   cardActions: {
     marginTop: 'auto',
+    justifyContent: 'center', // Center aligning the buttons
   },
   image: {
+    borderRadius: 6, // Rounded corners for images
     margin: '0 auto 10px auto',
     display: 'block !important',
+    width: '100%', // Ensuring the image takes full width of the card
+    height: 200, // Fixed height for uniformity
+    objectFit: 'cover', // Ensures the image covers the area, without distortion
   },
   content: {
     flexGrow: 1,
+    padding: '0 10px', // Padding for the content for better alignment
   },
   button: {
     background: theme.palette.background.default,
     color: theme.palette.getContrastText(theme.palette.background.default),
+    '&:hover': {
+      background: theme.palette.background.light, // Slight change on hover for buttons
+    },
   }
 
 }));

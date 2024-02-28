@@ -26,8 +26,8 @@ const BlogSplash = ({ header }) => {
         <Typography variant="h2" align="center" className={classes.header}>
           {header}
         </Typography>
-        <Typography variant="h5" align="center" paragraph className={classes.subheader}>
-          Welcome to my blog. Here you'll find articles on a variety of topics. Enjoy your read!
+        <Typography variant="h3" align="center" paragraph className={classes.subheader}>
+        Blog Posts
         </Typography>
       </Container>
     </div>

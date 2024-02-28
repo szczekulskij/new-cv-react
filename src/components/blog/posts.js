@@ -7,25 +7,55 @@ const useStyles = makeStyles({
   link: {
     textDecoration: 'none',
     color: 'inherit',
+    '&:hover': {
+      color: '#ff4081',
+    },
+  },
+  body1: {
+    fontSize: '0.875rem',
+  },
+  postMeta: {
+    display: 'flex',
+    marginBottom: '1rem', // Added this line
+  },
+  date: {
+    marginRight: '1rem',
+    fontWeight: 'bold', // Added this line
+  },
+  minRead: {
+    fontWeight: 'bold', // Added this line
+  },
+  tags: {
+    display: 'flex',
+    gap: '0.5rem',
+  },
+  tag: {
+    backgroundColor: '#f0f0f0',
+    padding: '0.25rem 0.5rem',
+    borderRadius: '0.5rem',
   },
 });
 
-const BlogPosts = ({ blogPosts }) => {
+const BlogPost = ({ blogPost }) => {
   const classes = useStyles();
 
   return (
-    <Box>
-      {blogPosts.map((post) => (
-        <Box key={post.frontmatter.title} my={4}>
-          <Link to={`/blog/${post.frontmatter.title}`} className={classes.link}>
-            <Typography variant="h2">{post.frontmatter.title}</Typography>
-            <Typography variant="body1">{format(new Date(post.frontmatter.date), 'yyyy-MM-dd')}</Typography>
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          </Link>
-        </Box>
-      ))}
+    <Box my={4}>
+      <Link to={`/blog/${blogPost.frontmatter.title}`} className={classes.link}>
+        <Typography variant="h4">{blogPost.frontmatter.title}</Typography>
+      </Link>
+      <div dangerouslySetInnerHTML={{ __html: blogPost.html }} />
+      <div className={classes.postMeta}>
+        <Typography variant="body1" className={classes.date}>{format(new Date(blogPost.frontmatter.date), 'yyyy-MM-dd')}</Typography>
+        <Typography variant="body1" className={classes.minRead}>{Math.ceil(blogPost.html.length / 1000)} min read</Typography>
+      </div>
+      <div className={classes.tags}>
+        {blogPost.frontmatter.tags.map((tag) => (
+          <span key={tag} className={classes.tag}>{tag}</span>
+        ))}
+      </div>
     </Box>
   );
 };
 
-export default BlogPosts;
+export default BlogPost;

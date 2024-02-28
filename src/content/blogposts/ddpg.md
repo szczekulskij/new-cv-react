@@ -1,6 +1,7 @@
 ---
 title: Improving DDPG algorithm
 date: 2020-01-01
+tags: ["PyTorch", "Numpy"]
 photoName: ./photos/ddpg.png
 technologies: "PyTorch, Numpy"
 GHlink: https://github.com/szczekulskij/DDPG-reconstruction

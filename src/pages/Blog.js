@@ -1,13 +1,11 @@
-import { Box, Container } from '@material-ui/core';
+import { Box, Container, Divider } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import { graphql } from 'gatsby';
 import React from 'react';
 import Layout from '../components/layout';
-import BlogPosts from '../components/blog/posts'; // Assuming you have a BlogPosts component
-import Splash from '../components/blog/splash'; // Assuming you have a Splash component for the blog
+import BlogPosts from '../components/blog/posts';
+import Splash from '../components/blog/splash';
 import Seo from '../components/seo';
-import { format } from 'date-fns';
-
 
 const useStyles = makeStyles((theme) => ({
   section: {
@@ -16,17 +14,27 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 24,
     boxShadow: theme.shadows[2],
   },
+  divider: {
+    margin: '1rem 0',
+  },
 }));
 
 const BlogPage = ({ data }) => {
   const classes = useStyles();
+  const { nodes: blogPosts } = data.blogPosts;
+
   return (
     <Layout>
       <Seo title='Blog' />
       <Splash />
       <Box className={classes.section}>
         <Container>
-          <BlogPosts blogPosts={data.blogPosts.nodes} />
+          {blogPosts.map((post, index) => (
+            <React.Fragment key={post.frontmatter.title}>
+              <BlogPosts blogPost={post} />
+              {index < blogPosts.length - 1 && <Divider className={classes.divider} />}
+            </React.Fragment>
+          ))}
         </Container>
       </Box>
     </Layout>
@@ -47,6 +55,7 @@ export const query = graphql`
         frontmatter {
           title
           date
+          tags
         }
       }
     }

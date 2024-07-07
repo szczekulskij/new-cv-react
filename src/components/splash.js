@@ -65,7 +65,7 @@ class Splash extends Component {
             Jan Szczekulski
           </Typography>
           <Typography variant='h4' className={classnames(classes.text, classes.subtitle)}>
-            Full-stack SDE and AI enthusiast
+            Full-stack SDE and AI researcher
           </Typography>
           <div className={classes.icons}>
             <Icon

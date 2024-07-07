@@ -9,5 +9,4 @@ foreground: '#fff'
 techstack: ""
 ---
 
-Starting my CS masters soon : )
-I'll be focusing on AI, enrolling in AI courses and hopefully joining an AI-oriented lab
+During my masters I'm primarly focusing on Deep RL and Computer Vision, while also learning more about all the other AI subfields such as NLP or Reccommendation Systems. I'm also a GSR at the [Contextual Robotics Institute](https://contextualrobotics.ucsd.edu/) where I'm working on a home robot project.

@@ -88,7 +88,13 @@ const Project = ({
   return (
     <Card className={classes.card}>
       <CardContent>
-        <GatsbyImage className={classes.image} image={photo} alt={name} />
+      <GatsbyImage
+        className={classes.image}
+        image={photo}
+        alt={name}
+        // imgStyle={{ height: "100px", width: "500px"}} // This controls the image itself
+        style={{ height: "120px", width: "150px" }} // This attempts to control the container of the image
+      />
         <Typography variant='h6'>{name}</Typography>
         <Typography variant='overline'>Tech stack: {technologies}</Typography>
         <div dangerouslySetInnerHTML={{ __html: content }} />

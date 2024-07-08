@@ -6042,7 +6042,7 @@ gatsby-sharp@^0.19.0:
     "@types/sharp" "^0.30.5"
     sharp "^0.30.7"
 
-gatsby-source-filesystem@^4.1.0:
+gatsby-source-filesystem@^4.25.0:
   version "4.25.0"
   resolved "https://registry.npmjs.org/gatsby-source-filesystem/-/gatsby-source-filesystem-4.25.0.tgz"
   integrity sha512-gja4++bPkYpnum4/TxFicr3zRHBArnM2HjT77EE4EuDhdl6qlJYr/heD09LIPN2jdR5gmPwMDjIZnuYZ/6j/aQ==
@@ -6084,7 +6084,7 @@ gatsby-transformer-json@^4.1.0:
     "@babel/runtime" "^7.15.4"
     bluebird "^3.7.2"
 
-gatsby-transformer-remark@^5.1.0:
+gatsby-transformer-remark@^5.25.1:
   version "5.25.1"
   resolved "https://registry.npmjs.org/gatsby-transformer-remark/-/gatsby-transformer-remark-5.25.1.tgz"
   integrity sha512-6k3uOnZYsJSgmZIWq9Y+Cqb6pysusCUBYpQY1+V9ofpSRbrZGGfuoCeFKd27x/c0jI5jneuL3NXnxwn/JJK1Ig==

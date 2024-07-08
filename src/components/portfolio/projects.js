@@ -61,6 +61,7 @@ const Project = ({
   technologies,
   secondLink,
   secondLinkCallToAction,
+  blogName, // new prop
 }) => {
   const classes = useStyles();
   let button;
@@ -81,10 +82,19 @@ const Project = ({
     );
   }
 
+  // Generate blogLink based on blogName
+  const blogLink = blogName ? `/blog/${blogName.replace(/\s+/g, '-')}` : null;
+
   return (
     <Card className={classes.card}>
       <CardContent>
-        <GatsbyImage className={classes.image} image={photo} alt={name} />
+      <GatsbyImage
+        className={classes.image}
+        image={photo}
+        alt={name}
+        // imgStyle={{ height: "100px", width: "500px"}} // This controls the image itself
+        style={{ height: "120px", width: "150px" }} // This attempts to control the container of the image
+      />
         <Typography variant='h6'>{name}</Typography>
         <Typography variant='overline'>Tech stack: {technologies}</Typography>
         <div dangerouslySetInnerHTML={{ __html: content }} />
@@ -103,6 +113,19 @@ const Project = ({
           GitHub
         </Button>
         {button}
+        {blogLink && (
+          <Button
+            size='small'
+            component='a'
+            href={blogLink}
+            target='_blank'
+            rel='noopener'
+            color='inherit'
+            className={classes.button}
+          >
+            Blog Post
+          </Button>
+        )}
       </CardActions>
     </Card>
   );
@@ -124,6 +147,7 @@ const TopProjects = ({ topProjects }) => {
           secondLinkCallToAction={project.frontmatter.secondLinkCallToAction}
           background={project.frontmatter.background}
           color={project.frontmatter.color}
+          blogName={project.frontmatter.blogName}
         />
       ))}
     </div>

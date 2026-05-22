@@ -56,5 +56,6 @@ Replication for high availability. In its definition Zookeper is a coordination 
 
 
 ## Low-level implementation
+(Prepping for interview - will continue soon)
 
 ## Real-life example of systems using Zookeper  

@@ -9,7 +9,7 @@ sourceUrl: "https://static.googleusercontent.com/media/research.google.com/en//a
 ---
 
 ## "Why is it (Spanner) needed"
-
+(Prepping for interview - will continue soon)
 
 ## Key promises of Zookeper
 

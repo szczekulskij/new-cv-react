@@ -5,7 +5,7 @@ labels: ["paper", "distributed systems"]
 summary: "RAFT is a consensus algorithm designed to be more understandable than Paxos while providing equivalent strong consistenct guarantees."
 authors: "Ongaro & Ousterhout (2014)"
 source: "USENIX ATC"
-sourceUrl: "https://github.com/szczekulskij/CSE-224"
+sourceUrl: "https://raft.github.io/raft.pdf"
 ---
 
 ## Key ideas

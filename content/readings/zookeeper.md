@@ -3,9 +3,9 @@ title: "ZooKeeper: Wait-free coordination for Internet-scale systems"
 date: 2026-05-16
 labels: ["paper", "distributed systems"]
 summary: "Zookeper is a distributed coordination service which handles a lot of distribtued system application workload and logic out of box. It works for specific use-cases."
-authors: "Ongaro & Ousterhout (2014)"
+authors: "Hunt, Konar, Junqueira & Reed (2010)"
 source: "USENIX ATC"
-sourceUrl: "https://github.com/szczekulskij/CSE-224"
+sourceUrl: "https://www.usenix.org/legacy/event/atc10/tech/full_papers/Hunt.pdf"
 ---
 
 ## "Why is it (Zookeper) needed"

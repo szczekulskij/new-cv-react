@@ -2,9 +2,9 @@
 title: "Frangipani: A Scalable Distributed File System"
 date: 2026-04-30
 labels: ["paper", "distributed systems", ]
-summary: "Spanner"
-authors: "Chandramohan A. Thekkath et all"
-# source: "USENIX ATC"
+summary: "Frangipani is a scalable distributed file system layered on top of the Petal virtual disk. Machines cache and serve file system logic locally while Petal provides shared, replicated block storage, using distributed locking and per-server logging for coherence and crash recovery."
+authors: "Chandramohan A. Thekkath, Timothy Mann, Edward K. Lee (1997)"
+source: "SOSP"
 sourceUrl: "https://www.cs.princeton.edu/courses/archive/fall08/cos597B/papers/frangipani.pdf"
 ---
 

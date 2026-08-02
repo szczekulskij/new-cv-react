@@ -1,6 +1,6 @@
 ---
 title: "#04 - Memory Management & Buffer Pools"
-description: "CMU Intro to Database Systems (15-445) — CMU Database Group."
+description: "What interface did DBMS people come up with for loading from memory - eg. Buffer pools, page tables, and frames. Another lesson on why a DBMS manages memory instead of using hihg-level OS functions, plus low-level details on memory management - buffer replacement strategies/dirty-page eviction."
 date: 2025-01-27
 seriesOrder: 4
 tags: ["databases", "cmu 15-445"]

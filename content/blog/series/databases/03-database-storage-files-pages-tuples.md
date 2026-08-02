@@ -1,6 +1,6 @@
 ---
 title: "#03 - Database Storage: Files, Pages, Tuples"
-description: "CMU Intro to Database Systems (15-445) — CMU Database Group."
+description: "How a DBMS stores data on disk: why it works around the OS, the page abstraction and page sizing and other fun shenanigans"
 date: 2025-01-20
 seriesOrder: 3
 tags: ["databases", "cmu 15-445"]

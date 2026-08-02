@@ -7,5 +7,7 @@ tags: ["databases", "distributed systems", "systems"]
 
 ## About this series
 
-Notes and takeaways as I work through the CMU Intro to Database Systems course
-(15-445/645) taught by the CMU Database Group. One post per lecture.
+Notes and takeaways from the CMU's Database Systems course(15-445/645). One post per lecture.
+Reference to series youtube: [here](https://www.youtube.com/watch?v=7NPIENPr-zk&list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5)
+
+Why am I learning this? I believe the computer science have a way of repeating itself, and the the way of thinking on how DBMS was designed and some parts of how DBMS interfaces were defined will be applicable to other projects I'll have a chance to work throughout my life. Also! More of low-level OS stuff, which is fun!

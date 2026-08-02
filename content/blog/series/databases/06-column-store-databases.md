@@ -1,6 +1,6 @@
 ---
 title: "#06 - Column-Store Databases"
-description: "CMU Intro to Database Systems (15-445) — CMU Database Group."
+description: "Log vs Tuple storage is one way to differente storage; However there exists a 3rd alternatve - a column-oriented storage. This stuff is powerful for big analytics, BigQuery and Parquet use it; These notes focus on its advantages/drawbacks and low-level design of it"
 date: 2025-02-10
 seriesOrder: 6
 tags: ["databases", "cmu 15-445"]

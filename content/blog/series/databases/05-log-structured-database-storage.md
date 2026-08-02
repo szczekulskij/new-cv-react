@@ -1,6 +1,6 @@
 ---
 title: "#05 - Log-Structured Database Storage"
-description: "CMU Intro to Database Systems (15-445) — CMU Database Group. Featuring a SingleStore database talk."
+description: "Storage interface stays the same - but there are different ways to implement its core functionality. This lectures touches on Log-structured storage, its drawbacks, benefits - and low-level design decisions and considerations"
 date: 2025-02-03
 seriesOrder: 5
 tags: ["databases", "cmu 15-445"]

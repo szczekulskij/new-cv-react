@@ -116,6 +116,12 @@ export function getSeriesBySlug(seriesSlug: string): Series | null {
       .toString();
   }
 
+  // TEMP: hide database lectures 9-25 for now. Remove this to bring them back.
+  const hiddenSeriesOrders =
+    seriesSlug === 'databases'
+      ? new Set(Array.from({ length: 25 - 9 + 1 }, (_, i) => i + 9))
+      : new Set<number>();
+
   const posts = fs
     .readdirSync(dir)
     .filter(
@@ -127,6 +133,7 @@ export function getSeriesBySlug(seriesSlug: string): Series | null {
       const slug = fileName.replace(/\.(md|mdx)$/, '');
       return getSeriesPostBySlug(seriesSlug, slug);
     })
+    .filter((post) => !hiddenSeriesOrders.has(post.seriesOrder))
     .sort((a, b) => a.seriesOrder - b.seriesOrder);
 
   return {

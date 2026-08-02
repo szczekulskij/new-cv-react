@@ -15,7 +15,7 @@ export default function BlogPage() {
     <div className="max-w-xl mx-auto px-4 sm:px-6 py-14">
       <h1 className="text-3xl font-bold text-text mb-1">Writing</h1>
       <p className="text-text-muted italic text-sm mb-10">
-        Musings on AI, systems, and whatever else is on my mind.
+        Writings on systems, AI and whatever else is on my mind.
       </p>
 
       <div className="divide-y divide-border">

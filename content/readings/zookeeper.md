@@ -25,7 +25,7 @@ Building raft (or pasox or so on) into your application to support making your s
     * election service → leader election
 
 ## Consistency level
-Despite distributed nature, zookeper promises linearizability with respect to writes as well as FIFO execution of writes/reads\*. Zookeper promises ordered reads across all servers/nodes, but sometimes zookeper will serve a stale data. This has to do with an implementation, where consensus algorithm is triggered during write, but read is `local` - eg. server/node simply returns current state of ddb without checking with other servers. This generally makes read very quick. 
+Despite distributed nature, zookeper promises linearizability with respect to writes as well as FIFO execution of writes/reads\*. Zookeper promises ordered reads across all servers/nodes, but sometimes zookeper will serve a stale data. This has to do with an implementation, where consensus algorithm is triggered during write, but read is `local` - eg. server/node simply returns current state of DBMS without checking with other servers. This generally makes read very quick. 
 
 One sample which zookeper doesn't handle is read-my-own-write consistency, but it exposes a specific seperate sort of `ad-hoc` API called sync to solve this issue (more on that later)
 

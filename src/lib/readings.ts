@@ -40,7 +40,8 @@ export function getAllReadings(): Reading[] {
   );
 }
 
-export function getReadingBySlug(slug: string): Reading {
+export function getReadingBySlug(rawSlug: string): Reading {
+  const slug = decodeURIComponent(rawSlug);
   const mdPath = path.join(readingsDirectory, `${slug}.md`);
   const mdxPath = path.join(readingsDirectory, `${slug}.mdx`);
 

@@ -1,3 +1,5 @@
+<!-- TODO: DO NOT INCLUDE IN WEBSITE YET -->
+
 ---
 title: "#12 - Hash Joins, Sort-Merge Joins, Nested Loop Join Algorithms"
 description: "The three core join algorithms — nested loop, sort-merge, and hash joins — and when a query engine picks each based on data size and available indexes."

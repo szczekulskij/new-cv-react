@@ -18,6 +18,13 @@ export type Reading = {
   content: string;
 };
 
+const DRAFT_MARKER = 'TODO: DO NOT INCLUDE IN WEBSITE YET';
+
+function isFileExcluded(filePath: string): boolean {
+  const raw = fs.readFileSync(filePath, 'utf8');
+  return raw.includes(DRAFT_MARKER);
+}
+
 export function getAllReadings(): Reading[] {
   if (!fs.existsSync(readingsDirectory)) {
     return [];
@@ -30,6 +37,10 @@ export function getAllReadings(): Reading[] {
         (name.endsWith('.md') || name.endsWith('.mdx')) &&
         !name.startsWith('_')
     )
+    .filter((name) => {
+      const filePath = path.join(readingsDirectory, name);
+      return !isFileExcluded(filePath);
+    })
     .map((fileName) => {
       const slug = fileName.replace(/\.(md|mdx)$/, '');
       return getReadingBySlug(slug);

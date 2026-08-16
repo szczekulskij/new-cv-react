@@ -1,3 +1,5 @@
+<!-- TODO: DO NOT INCLUDE IN WEBSITE YET -->
+
 ---
 title: "#15 - Database Query Optimizers Part 1"
 description: "How a query optimizer turns SQL into an efficient plan: rule-based rewrites, heuristics, and why picking the right plan matters so much."

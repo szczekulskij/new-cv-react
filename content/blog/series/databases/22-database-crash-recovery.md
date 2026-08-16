@@ -1,3 +1,5 @@
+<!-- TODO: DO NOT INCLUDE IN WEBSITE YET -->
+
 ---
 title: "#22 - Database Crash Recovery"
 description: "Recovering a database after a crash: the ARIES algorithm and its analysis, redo, and undo phases that restore a consistent state from the log."

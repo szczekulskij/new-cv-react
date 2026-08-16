@@ -36,3 +36,6 @@ Some basics:
 * Perfectly balanced (every leaf-node has the same depth) 
 * Every node other than the root is at least half-full
 * Why B+ trees ? -> Makes I/O sequential
+
+### Support for multi-primary index
+Just store primary index as (a,b) and sort/split on double inequality

@@ -33,6 +33,13 @@ export type Series = {
   posts: SeriesPost[];
 };
 
+const DRAFT_MARKER = 'TODO: DO NOT INCLUDE IN WEBSITE YET';
+
+function isFileExcluded(filePath: string): boolean {
+  const raw = fs.readFileSync(filePath, 'utf8');
+  return raw.includes(DRAFT_MARKER);
+}
+
 export function getAllPosts(): BlogPost[] {
   if (!fs.existsSync(postsDirectory)) {
     return [];
@@ -45,6 +52,10 @@ export function getAllPosts(): BlogPost[] {
         (name.endsWith('.md') || name.endsWith('.mdx')) &&
         !name.startsWith('_')
     )
+    .filter((name) => {
+      const mdPath = path.join(postsDirectory, name);
+      return !isFileExcluded(mdPath);
+    })
     .map((fileName) => {
       const slug = fileName.replace(/\.(md|mdx)$/, '');
       return getPostBySlug(slug);
@@ -116,12 +127,6 @@ export function getSeriesBySlug(seriesSlug: string): Series | null {
       .toString();
   }
 
-  // TEMP: hide database lectures 9-25 for now. Remove this to bring them back.
-  const hiddenSeriesOrders =
-    seriesSlug === 'databases'
-      ? new Set(Array.from({ length: 25 - 9 + 1 }, (_, i) => i + 9))
-      : new Set<number>();
-
   const posts = fs
     .readdirSync(dir)
     .filter(
@@ -129,11 +134,14 @@ export function getSeriesBySlug(seriesSlug: string): Series | null {
         (name.endsWith('.md') || name.endsWith('.mdx')) &&
         !name.startsWith('_')
     )
+    .filter((name) => {
+      const filePath = path.join(dir, name);
+      return !isFileExcluded(filePath);
+    })
     .map((fileName) => {
       const slug = fileName.replace(/\.(md|mdx)$/, '');
       return getSeriesPostBySlug(seriesSlug, slug);
     })
-    .filter((post) => !hiddenSeriesOrders.has(post.seriesOrder))
     .sort((a, b) => a.seriesOrder - b.seriesOrder);
 
   return {

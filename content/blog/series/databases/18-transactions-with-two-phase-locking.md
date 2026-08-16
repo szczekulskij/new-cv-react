@@ -1,3 +1,5 @@
+<!-- TODO: DO NOT INCLUDE IN WEBSITE YET -->
+
 ---
 title: "#18 - Transactions with Two-Phase Locking"
 description: "Two-phase locking (2PL) for serializable transactions: growing and shrinking lock phases, strict 2PL, and how deadlocks are detected and prevented."

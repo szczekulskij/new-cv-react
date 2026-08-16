@@ -1,3 +1,5 @@
+<!-- TODO: DO NOT INCLUDE IN WEBSITE YET -->
+
 ---
 title: "#16 - Query Optimization Part 2"
 description: "Cost-based query optimization: using statistics to estimate cardinality and cost, and searching the plan space to find the cheapest execution."

@@ -2,7 +2,7 @@
 
 ---
 title: "#07 - TP 201 Project 1: The Rust Toolbox"
-description: "Building an in-memory key/value store — the first project in PingCAP's Practical Networked Applications in Rust. Setting up the project, using clap, clippy, and rustfmt."
+description: "Building an in-memory key/value store - the first project in PingCAP's Practical Networked Applications in Rust. Setting up the project, using clap, clippy, and rustfmt."
 date: 2026-08-16
 seriesOrder: 7
 tags: ["rust", "talent-plan", "kv-store", "tp201"]
@@ -10,7 +10,7 @@ tags: ["rust", "talent-plan", "kv-store", "tp201"]
 
 ## Overview
 
-**Course**: TP 201 — Practical Networked Applications in Rust
+**Course**: TP 201 - Practical Networked Applications in Rust
 **Project 1**: The Rust Toolbox
 
 **Task**: Create an in-memory key/value store that passes simple tests and responds to command-line arguments.

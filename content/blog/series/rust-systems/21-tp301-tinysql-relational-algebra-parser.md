@@ -2,7 +2,7 @@
 
 ---
 title: "#21 - TP 301 TinySQL Projects 1-2: Relational Algebra and Parser"
-description: "Starting the SQL layer — understanding relational algebra and implementing a SQL parser that turns text into an AST."
+description: "Starting the SQL layer - understanding relational algebra and implementing a SQL parser that turns text into an AST."
 date: 2026-08-16
 seriesOrder: 21
 tags: ["go", "talent-plan", "databases", "sql", "parser", "tinysql", "tp301"]
@@ -10,7 +10,7 @@ tags: ["go", "talent-plan", "databases", "sql", "parser", "tinysql", "tp301"]
 
 ## Overview
 
-**Course**: TP 301 — TinySQL, a distributed relational database in Go
+**Course**: TP 301 - TinySQL, a distributed relational database in Go
 **Projects 1-2**: Relational Algebra & Parser
 
 **Tasks**:
@@ -23,11 +23,11 @@ TinySQL is the SQL layer that sits on top of TinyKV. Together they form a comple
 
 ### Relational Algebra
 
-TODO — selection, projection, join, set operations
+TODO - selection, projection, join, set operations
 
 ### SQL Parsing
 
-TODO — lexing, parsing, AST representation
+TODO - lexing, parsing, AST representation
 
 ## Implementation
 

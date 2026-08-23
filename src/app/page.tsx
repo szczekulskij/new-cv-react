@@ -12,6 +12,12 @@ type RecentItem = {
   type: 'blog' | 'reading';
 };
 
+const highlights = [
+  { stat: '$450M+', label: 'estimated annual impact from features shipped at Amazon' },
+  { stat: '10M+', label: 'daily requests served by systems I helped design' },
+  { stat: '4', label: 'publications, incl. co-author of an ICRA 2025 robotics paper and an AI-in-medicine study' },
+];
+
 export default function Home() {
   const posts: RecentItem[] = getAllPosts().map((p) => ({
     slug: p.slug,
@@ -36,29 +42,51 @@ export default function Home() {
     .slice(0, 5);
 
   return (
-    <div className="max-w-xl mx-auto px-4 sm:px-6">
+    <div className="max-w-3xl mx-auto px-4 sm:px-8">
       {/* Hero */}
-      <section className="pt-14 pb-10">
+      <section className="pt-16 pb-10">
+        <div className="flex flex-col-reverse sm:flex-row sm:items-start sm:justify-between gap-8">
         <div>
-          <h1 className="text-3xl font-bold text-text leading-tight mb-4">
-            Hey, I&apos;m Jan. I design and build distributed systems.
+          <p className="text-xs font-mono tracking-widest text-accent uppercase mb-4">
+            Software Engineer · Distributed Systems · AI
+          </p>
+          <h1 className="text-4xl font-bold text-text leading-tight mb-5 tracking-tight">
+            Hi, I&apos;m Jan.
           </h1>
-          <p className="text-text text-sm leading-relaxed mb-3">
-            Currently working at 
-            {' '}<a href="http://amazon.com/" className="text-accent hover:text-accent-hover underline underline-offset-2">Amazon</a>,
-            as SDE specializing in distributed systems applied to real world problems. Recent graduate of 
-            {' '}<a href="https://ucsd.edu" className="text-accent hover:text-accent-hover underline underline-offset-2">UCSD</a> where I explored the magic of Systems & AI.
+          <p className="text-text text-base leading-relaxed mb-4 max-w-xl">
+            I&apos;m a Software Development Engineer at{' '}
+            <a href="http://amazon.com/" className="text-accent hover:text-accent-hover underline underline-offset-2">Amazon</a>,
+            {' '}where I design and build distributed systems that operate at scale. I&apos;m a recent
+            M.S. Computer Science graduate of{' '}
+            <a href="https://ucsd.edu" className="text-accent hover:text-accent-hover underline underline-offset-2">UCSD</a>,
+            {' '}where I focused on systems and AI.
           </p>
-          <p className="text-text text-sm leading-relaxed mb-5">
-            I also collaborate with 
-            {' '}<a href="https://contextualrobotics.ucsd.edu/" className="text-accent hover:text-accent-hover underline underline-offset-2">Contextual Robotics Institute</a> to publish real-world robotic application, 
-            as well as partner with Lazarski University on AI applications in medicine. For my recent works, please see: 
-            {' '}<a href="https://arxiv.org/abs/2411.10899" className="text-accent hover:text-accent-hover underline underline-offset-2">Planning for Tabletop Object Rearrangement</a>,  
-            {' '}<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13095918/" className="text-accent hover:text-accent-hover underline underline-offset-2">PWB treatment analyses paper</a>
+          <p className="text-text text-base leading-relaxed mb-7 max-w-xl">
+            Alongside my day job, I collaborate with the{' '}
+            <a href="https://contextualrobotics.ucsd.edu/" className="text-accent hover:text-accent-hover underline underline-offset-2">Contextual Robotics Institute</a>
+            {' '}on robotics research, and partner with Lazarski University on AI applications in medicine.
+            Recent work includes{' '}
+            <a href="https://arxiv.org/abs/2411.10899" className="text-accent hover:text-accent-hover underline underline-offset-2">a paper on tabletop object rearrangement</a>
+            {' '}(ICRA 2025) and{' '}
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13095918/" className="text-accent hover:text-accent-hover underline underline-offset-2">a treatment-outcome study for Port-Wine Stain birthmarks</a>.
+          </p>
 
-            
-          </p>
-          <div className="flex items-center gap-4 text-[10px] font-mono tracking-widest text-text-muted">
+          <div className="flex flex-wrap items-center gap-3 mb-8">
+            <Link
+              href="/cv"
+              className="inline-flex items-center gap-1.5 text-xs font-mono tracking-widest px-4 py-2.5 bg-text text-bg rounded hover:bg-accent transition-colors"
+            >
+              VIEW CV
+            </Link>
+            <a
+              href="mailto:szczekulskij@gmail.com"
+              className="inline-flex items-center gap-1.5 text-xs font-mono tracking-widest px-4 py-2.5 border border-border rounded hover:border-text text-text hover:text-text transition-colors"
+            >
+              GET IN TOUCH
+            </a>
+          </div>
+
+          <div className="flex items-center gap-4 text-xs font-mono tracking-widest text-text-muted">
             <a href="https://www.linkedin.com/in/szczekulskij/" target="_blank" rel="noopener noreferrer" className="hover:text-text transition-colors flex items-center gap-1">
               <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
               LINKEDIN
@@ -72,13 +100,34 @@ export default function Home() {
             </a>
           </div>
         </div>
+
+        <img
+          src="/images/profile/jan-headshot.jpg"
+          alt="Portrait of Jan Szczekulski"
+          width={640}
+          height={640}
+          className="w-28 h-28 sm:w-36 sm:h-36 rounded-full object-cover border border-border shrink-0"
+        />
+        </div>
+      </section>
+
+      {/* Highlights */}
+      <section className="pt-10 pb-10 border-t border-border">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {highlights.map((h) => (
+            <div key={h.label} className="flex flex-col bg-bg-card border border-border rounded p-4">
+              <p className="text-xl font-bold text-text mb-2 tracking-tight">{h.stat}</p>
+              <p className="text-xs text-text-muted leading-relaxed">{h.label}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* Recent Writing */}
-      <section className="pt-14 pb-10 border-t border-border">
+      <section className="pt-4 pb-10">
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-xl font-bold text-text">Recent writing</h2>
-          <Link href="/blog" className="text-[10px] font-mono tracking-widest text-text-muted hover:text-text transition-colors">
+          <Link href="/blog" className="text-xs font-mono tracking-widest text-text-muted hover:text-text transition-colors">
             ALL POSTS →
           </Link>
         </div>
@@ -98,7 +147,7 @@ export default function Home() {
                   {item.tags && item.tags.length > 0 && (
                     <div className="flex flex-wrap gap-1.5 mt-2">
                       {item.tags.slice(0, 2).map((tag) => (
-                        <span key={tag} className="text-[10px] font-mono tracking-wider px-1.5 py-0.5 border border-border rounded text-text-muted">
+                        <span key={tag} className="text-xs font-mono tracking-wider px-1.5 py-0.5 border border-border rounded text-text-muted">
                           {tag.toUpperCase()}
                         </span>
                       ))}
@@ -106,7 +155,7 @@ export default function Home() {
                   )}
                 </div>
                 {item.date && (
-                  <span className="text-[10px] font-mono text-text-light whitespace-nowrap mt-0.5">
+                  <span className="text-xs font-mono text-text-light whitespace-nowrap mt-0.5">
                     {format(new Date(item.date), 'MMM yyyy')}
                   </span>
                 )}

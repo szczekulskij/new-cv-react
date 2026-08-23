@@ -11,7 +11,7 @@ export default function SeriesIndexPage() {
   const series = getAllSeries();
 
   return (
-    <div className="max-w-xl mx-auto px-4 sm:px-6 py-14">
+    <div className="max-w-3xl mx-auto px-4 sm:px-8 py-14">
       <h1 className="text-3xl font-bold text-text mb-1">Intro Series</h1>
       <p className="text-text-muted italic text-sm mb-10">
         Multi-part deep dives, one topic at a time.
@@ -31,7 +31,7 @@ export default function SeriesIndexPage() {
                 <h2 className="text-sm font-bold text-text group-hover:text-accent transition-colors">
                   {s.title}
                 </h2>
-                <span className="text-[10px] font-mono text-text-light whitespace-nowrap">
+                <span className="text-xs font-mono text-text-light whitespace-nowrap">
                   {s.posts.length} PARTS
                 </span>
               </div>

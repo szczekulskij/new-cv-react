@@ -2,7 +2,7 @@
 
 ---
 title: "#10 - TP 201 Project 4: Concurrency and Parallelism"
-description: "Making the KV store multithreaded — thread pools, channels, locks, lock-free data structures, and atomics. Benchmarking single-threaded vs multithreaded performance."
+description: "Making the KV store multithreaded - thread pools, channels, locks, lock-free data structures, and atomics. Benchmarking single-threaded vs multithreaded performance."
 date: 2026-08-16
 seriesOrder: 10
 tags: ["rust", "talent-plan", "kv-store", "concurrency", "tp201"]
@@ -10,7 +10,7 @@ tags: ["rust", "talent-plan", "kv-store", "concurrency", "tp201"]
 
 ## Overview
 
-**Course**: TP 201 — Practical Networked Applications in Rust
+**Course**: TP 201 - Practical Networked Applications in Rust
 **Project 4**: Concurrency and Parallelism
 
 **Task**: Create a multithreaded, persistent key/value store server and client with synchronous networking over a custom protocol.

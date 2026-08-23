@@ -24,10 +24,10 @@ export default function ReadingPage({ params }: Props) {
   const reading = getReadingBySlug(params.slug);
 
   return (
-    <article className="max-w-6xl mx-auto px-4 sm:px-6 py-14">
+    <article className="max-w-3xl mx-auto px-4 sm:px-8 py-14">
       <Link
         href="/readings"
-        className="inline-flex items-center text-text-muted hover:text-text mb-8 transition-colors font-mono text-[10px] tracking-widest"
+        className="inline-flex items-center text-text-muted hover:text-text mb-8 transition-colors font-mono text-xs tracking-widest"
       >
         ← BACK
       </Link>
@@ -37,13 +37,13 @@ export default function ReadingPage({ params }: Props) {
           {reading.labels.map((label) => (
             <span
               key={label}
-              className="text-[9px] font-mono tracking-widest px-1.5 py-0.5 border border-border rounded text-text-muted uppercase"
+              className="text-[10px] font-mono tracking-widest px-1.5 py-0.5 border border-border rounded text-text-muted uppercase"
             >
               {label}
             </span>
           ))}
           {reading.date && (
-            <span className="text-[10px] font-mono text-text-light">
+            <span className="text-xs font-mono text-text-light">
               {format(new Date(reading.date), 'MMM yyyy')}
             </span>
           )}
@@ -70,7 +70,7 @@ export default function ReadingPage({ params }: Props) {
 
       {/* Summary box */}
       <div className="bg-bg-card border border-border rounded p-4 mb-8">
-        <p className="text-[10px] font-mono tracking-widest text-text-muted uppercase mb-2">Summary</p>
+        <p className="text-xs font-mono tracking-widest text-text-muted uppercase mb-2">Summary</p>
         <p className="text-sm text-text leading-relaxed">{reading.summary}</p>
       </div>
 

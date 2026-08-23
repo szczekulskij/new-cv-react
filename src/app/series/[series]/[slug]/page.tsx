@@ -38,20 +38,20 @@ export default function SeriesPostPage({ params }: Props) {
   const next = index < series.posts.length - 1 ? series.posts[index + 1] : null;
 
   return (
-    <article className="max-w-6xl mx-auto px-4 sm:px-6 py-14">
+    <article className="max-w-3xl mx-auto px-4 sm:px-8 py-14">
       <Link
         href={`/series/${series.slug}`}
-        className="inline-flex items-center text-text-muted hover:text-text mb-8 transition-colors font-mono text-[10px] tracking-widest"
+        className="inline-flex items-center text-text-muted hover:text-text mb-8 transition-colors font-mono text-xs tracking-widest"
       >
         ← {series.title.toUpperCase()}
       </Link>
 
       <header className="mb-8">
-        <div className="mb-2 font-mono text-[10px] tracking-widest text-accent">
+        <div className="mb-2 font-mono text-xs tracking-widest text-accent">
           {series.title.toUpperCase()} · PART {post.seriesOrder}
         </div>
         <h1 className="text-2xl font-bold text-text mb-3">{post.title}</h1>
-        <div className="flex flex-wrap items-center gap-3 text-[10px] font-mono text-text-light">
+        <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-text-light">
           {post.date && (
             <time dateTime={post.date}>
               {format(new Date(post.date), 'MMMM d, yyyy')}
@@ -83,7 +83,7 @@ export default function SeriesPostPage({ params }: Props) {
             href={`/series/${series.slug}/${prev.slug}`}
             className="group flex-1"
           >
-            <div className="font-mono text-[10px] tracking-widest text-text-light mb-1">
+            <div className="font-mono text-xs tracking-widest text-text-light mb-1">
               ← PREVIOUS
             </div>
             <div className="text-text-muted group-hover:text-accent transition-colors">
@@ -98,7 +98,7 @@ export default function SeriesPostPage({ params }: Props) {
             href={`/series/${series.slug}/${next.slug}`}
             className="group flex-1 text-right"
           >
-            <div className="font-mono text-[10px] tracking-widest text-text-light mb-1">
+            <div className="font-mono text-xs tracking-widest text-text-light mb-1">
               NEXT →
             </div>
             <div className="text-text-muted group-hover:text-accent transition-colors">

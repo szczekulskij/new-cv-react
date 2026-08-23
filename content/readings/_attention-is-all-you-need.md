@@ -12,7 +12,7 @@ sourceUrl: "https://arxiv.org/abs/1706.03762"
 
 - **Self-attention** allows the model to attend to all positions in the input simultaneously, unlike RNNs which process sequentially.
 - **Multi-head attention** lets the model jointly attend to information from different representation subspaces at different positions.
-- **Positional encoding** is added since the model has no recurrence — uses sinusoidal functions of different frequencies.
+- **Positional encoding** is added since the model has no recurrence - uses sinusoidal functions of different frequencies.
 
 ## Architecture
 
@@ -27,4 +27,4 @@ This paper fundamentally changed NLP and later vision/audio. GPT, BERT, and all 
 
 ## Personal Notes
 
-The positional encoding choice is interesting — sinusoidal functions allow the model to extrapolate to sequence lengths longer than those seen during training. Later work (RoPE, ALiBi) improved on this significantly.
+The positional encoding choice is interesting - sinusoidal functions allow the model to extrapolate to sequence lengths longer than those seen during training. Later work (RoPE, ALiBi) improved on this significantly.

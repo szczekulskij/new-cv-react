@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'CV',
-  description: 'Jan Szczekulski — Curriculum Vitae',
+  description: 'Jan Szczekulski - Curriculum Vitae',
 };
 
 const experience = [
@@ -19,7 +19,7 @@ const experience = [
       'Developed distributed backend services and APIs in Java/Spring using DynamoDB, ECS, Lambda, SQS, SNS, Kinesis, and CI/CD tooling while driving tradeoff decisions between scalability, fault-tolerance, and blast radius minimization.',
       'Owned operational reliability for 3+ Tier-1 production systems including deployment pipelines, dashboards, alarms, incident response, load testing, and production migration coordination.',
       'Resolved critical European-wide production incidents by identifying transient distributed bugs and introducing safeguards across 3+ Tier-1 services.',
-      'Designed and shipped 3 key features across 8+ systems, earning/saving estimated $450M per year — focused on reducing manual intervention and scaling across more sites.',
+      'Designed and shipped 3 key features across 8+ systems, earning/saving estimated $450M per year - focused on reducing manual intervention and scaling across more sites.',
     ],
   },
   {
@@ -44,7 +44,7 @@ const experience = [
     ],
     bullets: [
       'Designed and implemented experimentation infrastructure integrating an in-house A/B testing backend with a high-throughput widget delivery platform serving 5k+ RPS.',
-      'Built backend APIs, integration services, rollout tooling, and React-based frontend systems enabling rapid experiment configuration — contributing to £150M+ YoY business impact.',
+      'Built backend APIs, integration services, rollout tooling, and React-based frontend systems enabling rapid experiment configuration - contributing to £150M+ YoY business impact.',
       'Designed backend integrations between experimentation systems, widgeting services, and analytics platforms using TypeScript, Python, SQL, React.js, and MVC architectures.',
       'Built SQL and Python pipelines for experiment evaluation, statistical analysis, and operational analytics across millions of daily events.',
       'Managed production infrastructure including Kubernetes clusters, deployment pipelines, VM provisioning, patching, and operational maintenance.',
@@ -89,12 +89,12 @@ const skills = [
 
 export default function CVPage() {
   return (
-    <div className="max-w-xl mx-auto px-4 sm:px-6 py-14">
+    <div className="max-w-3xl mx-auto px-4 sm:px-8 py-14">
       <div className="flex items-center justify-between mb-4">
         <h1 className="text-3xl font-bold text-text">CV</h1>
         <a
           href="/resume.pdf"
-          className="text-[10px] font-mono tracking-widest px-3 py-1.5 border border-border rounded hover:border-text text-text-muted hover:text-text transition-colors"
+          className="text-xs font-mono tracking-widest px-3 py-1.5 border border-border rounded hover:border-text text-text-muted hover:text-text transition-colors"
         >
           DOWNLOAD PDF
         </a>
@@ -108,18 +108,18 @@ export default function CVPage() {
 
       {/* Experience */}
       <section className="mb-12">
-        <h2 className="text-[10px] font-mono tracking-widest text-text-muted uppercase mb-5">Experience</h2>
+        <h2 className="text-xs font-mono tracking-widest text-text-muted uppercase mb-5">Experience</h2>
         <div className="space-y-8">
           {experience.map((item) => (
             <div key={item.company} className="border-l-2 border-border pl-4">
               <div className="flex items-start justify-between gap-3 mb-1">
                 <h3 className="text-sm font-bold text-text">{item.company}</h3>
-                <span className="text-[10px] font-mono text-text-light whitespace-nowrap">{item.location}</span>
+                <span className="text-xs font-mono text-text-light whitespace-nowrap">{item.location}</span>
               </div>
               {item.roles.map((role) => (
                 <div key={role.title} className="flex items-start justify-between gap-3 mb-0.5">
                   <p className="text-xs text-text-muted">{role.title}</p>
-                  <span className="text-[10px] font-mono text-text-light whitespace-nowrap">{role.period}</span>
+                  <span className="text-xs font-mono text-text-light whitespace-nowrap">{role.period}</span>
                 </div>
               ))}
               <ul className="mt-2 space-y-1.5">
@@ -136,12 +136,12 @@ export default function CVPage() {
 
       {/* Publications */}
       <section className="mb-12">
-        <h2 className="text-[10px] font-mono tracking-widest text-text-muted uppercase mb-5">Publications</h2>
+        <h2 className="text-xs font-mono tracking-widest text-text-muted uppercase mb-5">Publications</h2>
         <div className="space-y-5">
           {publications.map((pub) => (
             <div key={pub.title} className="border-l-2 border-border pl-4">
               <h3 className="text-sm font-bold text-text">{pub.title}</h3>
-              <p className="text-[10px] font-mono text-text-light mb-1">{pub.venue}</p>
+              <p className="text-xs font-mono text-text-light mb-1">{pub.venue}</p>
               <p className="text-xs text-text-muted">{pub.description}</p>
             </div>
           ))}
@@ -150,7 +150,7 @@ export default function CVPage() {
 
       {/* Education */}
       <section className="mb-12">
-        <h2 className="text-[10px] font-mono tracking-widest text-text-muted uppercase mb-5">Education</h2>
+        <h2 className="text-xs font-mono tracking-widest text-text-muted uppercase mb-5">Education</h2>
         <div className="space-y-5">
           {education.map((item) => (
             <div key={item.school} className="border-l-2 border-border pl-4">
@@ -159,7 +159,7 @@ export default function CVPage() {
                   <h3 className="text-sm font-bold text-text">{item.school}</h3>
                   <p className="text-xs text-text-muted">{item.degree}</p>
                 </div>
-                <span className="text-[10px] font-mono text-text-light whitespace-nowrap">{item.period}</span>
+                <span className="text-xs font-mono text-text-light whitespace-nowrap">{item.period}</span>
               </div>
             </div>
           ))}
@@ -168,11 +168,11 @@ export default function CVPage() {
 
       {/* Skills */}
       <section>
-        <h2 className="text-[10px] font-mono tracking-widest text-text-muted uppercase mb-5">Technical Skills</h2>
+        <h2 className="text-xs font-mono tracking-widest text-text-muted uppercase mb-5">Technical Skills</h2>
         <div className="space-y-3">
           {skills.map((group) => (
             <div key={group.category}>
-              <p className="text-[10px] font-mono text-text-muted uppercase tracking-wider mb-0.5">{group.category}</p>
+              <p className="text-xs font-mono text-text-muted uppercase tracking-wider mb-0.5">{group.category}</p>
               <p className="text-xs text-text">{group.items}</p>
             </div>
           ))}

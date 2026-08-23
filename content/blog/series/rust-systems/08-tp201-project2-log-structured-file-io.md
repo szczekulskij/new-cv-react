@@ -10,7 +10,7 @@ tags: ["rust", "talent-plan", "kv-store", "storage", "tp201"]
 
 ## Overview
 
-**Course**: TP 201 — Practical Networked Applications in Rust
+**Course**: TP 201 - Practical Networked Applications in Rust
 **Project 2**: Log-Structured File I/O
 
 **Task**: Create a persistent key/value store that can be accessed from the command line.
@@ -27,7 +27,7 @@ tags: ["rust", "talent-plan", "kv-store", "storage", "tp201"]
 
 Topics: Log-structured file I/O, the bitcask algorithm, Rust error handling, comparing collection types.
 
-TODO — bitcask paper, log-structured merge trees
+TODO - bitcask paper, log-structured merge trees
 
 ## Implementation
 

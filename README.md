@@ -4,7 +4,7 @@ Personal website built with Next.js 14, Tailwind CSS, and hosted on AWS (S3 + Cl
 
 ## How It Works
 
-This site uses **Next.js static export** (`output: 'export'` in next.config.js). At build time, Next.js compiles all pages into plain HTML, CSS, and JS files in an `out/` directory. **No server is needed at runtime** — the output is just static files that get uploaded to S3 and served through CloudFront's CDN.
+This site uses **Next.js static export** (`output: 'export'` in next.config.js). At build time, Next.js compiles all pages into plain HTML, CSS, and JS files in an `out/` directory. **No server is needed at runtime** - the output is just static files that get uploaded to S3 and served through CloudFront's CDN.
 
 The flow:
 1. `npm run build` → generates static HTML/CSS/JS into `out/`

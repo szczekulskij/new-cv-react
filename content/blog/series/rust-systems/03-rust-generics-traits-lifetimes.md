@@ -2,7 +2,7 @@
 
 ---
 title: "#03 - Generics, Traits, and Lifetimes"
-description: "Rust's polymorphism story — generic data types, trait-based abstraction, and lifetime annotations for reference validation. Covers Rust Book chapters 10-11."
+description: "Rust's polymorphism story - generic data types, trait-based abstraction, and lifetime annotations for reference validation. Covers Rust Book chapters 10-11."
 date: 2026-08-16
 seriesOrder: 3
 tags: ["rust", "talent-plan", "rust book"]

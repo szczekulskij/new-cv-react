@@ -2,7 +2,7 @@
 
 ---
 title: "#13 - TP 202 Raft Part B: Log Replication"
-description: "Implementing Raft log replication — keeping replicated logs consistent across the cluster, handling conflicts, and committing entries."
+description: "Implementing Raft log replication - keeping replicated logs consistent across the cluster, handling conflicts, and committing entries."
 date: 2026-08-16
 seriesOrder: 13
 tags: ["rust", "talent-plan", "distributed-systems", "raft", "replication", "tp202"]
@@ -10,7 +10,7 @@ tags: ["rust", "talent-plan", "distributed-systems", "raft", "replication", "tp2
 
 ## Overview
 
-**Course**: TP 202 — Distributed Systems in Rust
+**Course**: TP 202 - Distributed Systems in Rust
 **Lab 2B**: Log Replication
 
 **Task**: Implement the leader and follower code to append new log entries and bring followers up to date. Handle log conflicts and ensure safety.
@@ -19,15 +19,15 @@ tags: ["rust", "talent-plan", "distributed-systems", "raft", "replication", "tp2
 
 ### Log Structure & Consistency
 
-TODO — log entries, commit index, applying to state machine
+TODO - log entries, commit index, applying to state machine
 
 ### AppendEntries RPC (with entries)
 
-TODO — consistency check, conflict resolution, leader forcing consistency
+TODO - consistency check, conflict resolution, leader forcing consistency
 
 ### Commitment Rules
 
-TODO — majority-based commitment, leader completeness
+TODO - majority-based commitment, leader completeness
 
 ## Implementation
 

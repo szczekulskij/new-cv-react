@@ -10,18 +10,18 @@ tags: ["go", "talent-plan", "databases", "sql", "executor", "transactions", "tin
 
 ## Overview
 
-**Course**: TP 301 — TinySQL
+**Course**: TP 301 - TinySQL
 **Projects 5-6**: Executor & Percolator Integration
 
 **Tasks**:
-- Project 5: Implement the query executor — turning physical plans into actual data retrieval
+- Project 5: Implement the query executor - turning physical plans into actual data retrieval
 - Project 6: Integrate with Percolator transaction protocol for distributed SQL transactions
 
 ## Key Concepts
 
 ### Volcano Execution Model
 
-TODO — iterator-based, pull model, open/next/close
+TODO - iterator-based, pull model, open/next/close
 
 ### Hash Join & Aggregation
 
@@ -29,11 +29,11 @@ TODO
 
 ### Connecting SQL Layer to KV Layer
 
-TODO — how TinySQL talks to TinyKV, encoding/decoding keys
+TODO - how TinySQL talks to TinyKV, encoding/decoding keys
 
 ### Distributed SQL Transactions
 
-TODO — using Percolator to provide ACID guarantees for SQL statements
+TODO - using Percolator to provide ACID guarantees for SQL statements
 
 ## Implementation
 

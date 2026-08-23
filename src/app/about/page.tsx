@@ -2,16 +2,42 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'About Jan Szczekulski — Software Engineer at Amazon, AI researcher.',
+  description: 'About Jan Szczekulski - Software Engineer at Amazon, AI researcher.',
 };
 
 export default function AboutPage() {
   return (
-    <div className="max-w-xl mx-auto px-4 sm:px-6 py-14">
-      <h1 className="text-3xl font-bold text-text mb-1">About Jan</h1>
-      <p className="text-text-muted italic text-sm mb-10">Welcome to my corner of the internet.</p>
+    <div className="max-w-3xl mx-auto px-4 sm:px-8 py-14">
+      <div className="flex items-start gap-6 mb-6">
+        <img
+          src="/images/profile/jan-headshot.jpg"
+          alt="Portrait of Jan Szczekulski"
+          width={640}
+          height={640}
+          className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border border-border shrink-0"
+        />
+        <div>
+          <h1 className="text-3xl font-bold text-text mb-1">About Jan</h1>
+          <p className="text-text-muted italic text-sm">Welcome to my corner of the internet.</p>
+        </div>
+      </div>
 
-      <div className="space-y-5 text-text text-sm leading-relaxed">
+      <div className="flex flex-wrap items-center gap-3 mb-10">
+        <a
+          href="/resume.pdf"
+          className="inline-flex items-center gap-1.5 text-xs font-mono tracking-widest px-4 py-2.5 bg-text text-bg rounded hover:bg-accent transition-colors"
+        >
+          DOWNLOAD RESUME
+        </a>
+        <a
+          href="mailto:szczekulskij@gmail.com"
+          className="inline-flex items-center gap-1.5 text-xs font-mono tracking-widest px-4 py-2.5 border border-border rounded hover:border-text text-text transition-colors"
+        >
+          GET IN TOUCH
+        </a>
+      </div>
+
+      <div className="space-y-5 text-text text-base leading-relaxed">
         <p>
           I&apos;m a Software Engineer with 4+ years of experience designing and building
           distributed systems. I like building things that work at scale, breaking down hard
@@ -38,13 +64,13 @@ export default function AboutPage() {
         <p>
           I spent 3 years at{' '}
           <a href="https://www.thg.com" className="text-accent hover:text-accent-hover underline underline-offset-2">The Hut Group</a>{' '}
-          — first as a Data Scientist building A/B testing automation, then as a Software Engineer
+          - first as a Data Scientist building A/B testing automation, then as a Software Engineer
           designing experimentation infrastructure serving 5k+ RPS and contributing to £150M+ YoY
           business impact.
         </p>
 
         <p>
-          On the research side, I collaborate on AI applications in dermatology — using CycleGANs
+          On the research side, I collaborate on AI applications in dermatology - using CycleGANs
           and CNNs to predict treatment outcomes for Port-Wine Stain birthmarks. This work has been
           published in Scientific Reports and presented at ASLMS.
         </p>
@@ -56,7 +82,7 @@ export default function AboutPage() {
         </p>
 
         <p>
-          Off the keyboard, I&apos;m perfecting my basketball dribble and working towards achieving an ironman.
+          Off the keyboard, I&apos;m perfecting my basketball handles and training for an Ironman triathlon.
           If you want to get in touch, I&apos;m most responsive over{' '}
           <a href="mailto:szczekulskij@gmail.com" className="text-accent hover:text-accent-hover underline underline-offset-2">email</a>{' '}
           and{' '}

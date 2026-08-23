@@ -3,17 +3,17 @@ import Link from 'next/link';
 export function Footer() {
   return (
     <footer className="border-t border-border/50 bg-bg mt-16">
-      <div className="max-w-xl mx-auto px-4 sm:px-6 py-6">
+      <div className="max-w-3xl mx-auto px-4 sm:px-8 py-6">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-[10px] font-mono text-text-muted tracking-widest">
+          <p className="text-xs font-mono text-text-muted tracking-widest">
             © 2020–{new Date().getFullYear()} JAN SZCZEKULSKI
           </p>
           <div className="flex items-center gap-4">
-            <Link href="/blog" className="text-[10px] font-mono text-text-muted hover:text-text tracking-widest transition-colors">
-              WRITING
-            </Link>
-            <Link href="/about" className="text-[10px] font-mono text-text-muted hover:text-text tracking-widest transition-colors">
-              ABOUT
+            <a href="mailto:szczekulskij@gmail.com" className="text-xs font-mono text-text-muted hover:text-text tracking-widest transition-colors">
+              EMAIL
+            </a>
+            <Link href="/cv" className="text-xs font-mono text-text-muted hover:text-text tracking-widest transition-colors">
+              CV
             </Link>
             <a
               href="https://www.linkedin.com/in/szczekulskij/"

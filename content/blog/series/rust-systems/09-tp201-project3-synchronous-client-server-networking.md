@@ -10,7 +10,7 @@ tags: ["rust", "talent-plan", "kv-store", "networking", "tp201"]
 
 ## Overview
 
-**Course**: TP 201 — Practical Networked Applications in Rust
+**Course**: TP 201 - Practical Networked Applications in Rust
 **Project 3**: Synchronous Client-Server Networking
 
 **Task**: Create a single-threaded, persistent key/value store server and client with synchronous networking over a custom protocol.

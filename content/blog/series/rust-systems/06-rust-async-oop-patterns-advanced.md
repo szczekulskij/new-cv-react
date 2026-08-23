@@ -11,33 +11,33 @@ tags: ["rust", "talent-plan", "rust book"]
 ## Scope
 
 Working through **The Rust Programming Language** chapters 17-21:
-- Ch 17: Async/Await — Futures, Streams, and async concurrency
+- Ch 17: Async/Await - Futures, Streams, and async concurrency
 - Ch 18: Object-Oriented Programming Features (trait objects, design patterns)
 - Ch 19: Patterns and Matching
 - Ch 20: Advanced Features (unsafe, advanced traits/types, macros)
-- Ch 21: Final Project — Building a Multithreaded Web Server
+- Ch 21: Final Project - Building a Multithreaded Web Server
 
 ## Key Concepts
 
 ### Async/Await and Futures
 
-TODO — async fn, .await, Future trait, streams, tasks vs threads
+TODO - async fn, .await, Future trait, streams, tasks vs threads
 
 ### Trait Objects & Dynamic Dispatch
 
-TODO — dyn Trait, object safety
+TODO - dyn Trait, object safety
 
 ### Unsafe Rust
 
-TODO — raw pointers, unsafe functions, FFI
+TODO - raw pointers, unsafe functions, FFI
 
 ### Macros
 
-TODO — declarative macros, procedural macros
+TODO - declarative macros, procedural macros
 
 ### Multithreaded Web Server
 
-TODO — thread pools, graceful shutdown
+TODO - thread pools, graceful shutdown
 
 ## Notes & Takeaways
 

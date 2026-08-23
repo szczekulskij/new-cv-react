@@ -2,7 +2,7 @@
 
 ---
 title: "#01 - Rust Foundations: Ownership, Types, and the Borrow Checker"
-description: "Getting started with Rust — understanding ownership, borrowing, lifetimes, and the type system that makes Rust unique. Covers Rust Book chapters 1-6."
+description: "Getting started with Rust - understanding ownership, borrowing, lifetimes, and the type system that makes Rust unique. Covers Rust Book chapters 1-6."
 date: 2026-08-16
 seriesOrder: 1
 tags: ["rust", "talent-plan", "rust book"]

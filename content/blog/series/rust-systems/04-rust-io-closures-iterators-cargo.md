@@ -11,8 +11,8 @@ tags: ["rust", "talent-plan", "rust book"]
 ## Scope
 
 Working through **The Rust Programming Language** chapters 12-14:
-- Ch 12: An I/O Project — Building a Command Line Program (minigrep)
-- Ch 13: Functional Language Features — Closures and Iterators
+- Ch 12: An I/O Project - Building a Command Line Program (minigrep)
+- Ch 13: Functional Language Features - Closures and Iterators
 - Ch 14: More about Cargo and Crates.io (profiles, publishing, workspaces)
 
 ## Key Concepts

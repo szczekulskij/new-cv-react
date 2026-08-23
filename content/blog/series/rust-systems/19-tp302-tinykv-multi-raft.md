@@ -2,7 +2,7 @@
 
 ---
 title: "#19 - TP 302 TinyKV Project 3: Multi-Raft KV"
-description: "Scaling Raft horizontally — membership changes, leadership transfer, conf changes, region splits, and implementing a basic scheduler (PD)."
+description: "Scaling Raft horizontally - membership changes, leadership transfer, conf changes, region splits, and implementing a basic scheduler (PD)."
 date: 2026-08-16
 seriesOrder: 19
 tags: ["go", "talent-plan", "distributed-systems", "raft", "scheduling", "tinykv", "tp302"]
@@ -10,7 +10,7 @@ tags: ["go", "talent-plan", "distributed-systems", "raft", "scheduling", "tinykv
 
 ## Overview
 
-**Course**: TP 302 — TinyKV
+**Course**: TP 302 - TinyKV
 **Project 3**: Multi-Raft KV
 
 **Tasks**:
@@ -24,19 +24,19 @@ This project transforms TinyKV from a single Raft group into a horizontally scal
 
 ### Multi-Raft Architecture
 
-TODO — multiple Raft groups, each owning a key range (region)
+TODO - multiple Raft groups, each owning a key range (region)
 
 ### Membership Changes (Conf Change)
 
-TODO — adding/removing nodes safely
+TODO - adding/removing nodes safely
 
 ### Region Split
 
-TODO — splitting a region when it gets too large
+TODO - splitting a region when it gets too large
 
 ### The Scheduler (PD)
 
-TODO — collecting heartbeats, generating scheduling tasks, load balancing
+TODO - collecting heartbeats, generating scheduling tasks, load balancing
 
 ## Implementation
 

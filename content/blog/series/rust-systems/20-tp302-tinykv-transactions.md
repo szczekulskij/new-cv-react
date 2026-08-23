@@ -2,7 +2,7 @@
 
 ---
 title: "#20 - TP 302 TinyKV Project 4: Distributed Transactions"
-description: "Adding MVCC and distributed transactions to TinyKV — implementing Percolator-style two-phase commit with KvGet, KvPrewrite, KvCommit, KvScan, and rollback."
+description: "Adding MVCC and distributed transactions to TinyKV - implementing Percolator-style two-phase commit with KvGet, KvPrewrite, KvCommit, KvScan, and rollback."
 date: 2026-08-16
 seriesOrder: 20
 tags: ["go", "talent-plan", "distributed-systems", "transactions", "mvcc", "tinykv", "tp302"]
@@ -10,7 +10,7 @@ tags: ["go", "talent-plan", "distributed-systems", "transactions", "mvcc", "tiny
 
 ## Overview
 
-**Course**: TP 302 — TinyKV
+**Course**: TP 302 - TinyKV
 **Project 4**: Transactions
 
 **Tasks**:
@@ -18,25 +18,25 @@ tags: ["go", "talent-plan", "distributed-systems", "transactions", "mvcc", "tiny
 - Implement handlers of `KvGet`, `KvPrewrite`, and `KvCommit` requests
 - Implement handlers of `KvScan`, `KvCheckTxnStatus`, `KvBatchRollback`, and `KvResolveLock` requests
 
-This is the capstone of TinyKV — adding full distributed transaction support using the Percolator model.
+This is the capstone of TinyKV - adding full distributed transaction support using the Percolator model.
 
 ## Key Concepts
 
 ### MVCC Layer
 
-TODO — multi-version storage, timestamp-ordered reads
+TODO - multi-version storage, timestamp-ordered reads
 
 ### Percolator in Practice
 
-TODO — comparing with the Rust implementation from TP 202
+TODO - comparing with the Rust implementation from TP 202
 
 ### Transaction Lifecycle
 
-TODO — begin → prewrite → commit, handling failures and rollbacks
+TODO - begin → prewrite → commit, handling failures and rollbacks
 
 ### Lock Resolution
 
-TODO — KvCheckTxnStatus, KvResolveLock for cleaning up stuck transactions
+TODO - KvCheckTxnStatus, KvResolveLock for cleaning up stuck transactions
 
 ## Implementation
 

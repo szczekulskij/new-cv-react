@@ -57,7 +57,7 @@ export function ReadingsClient({ readings, allLabels }: Props) {
       <div className="flex flex-wrap gap-2 mb-8">
         <button
           onClick={() => setActiveLabels([])}
-          className={`text-[10px] font-mono tracking-widest px-2 py-1 border rounded transition-colors ${
+          className={`text-xs font-mono tracking-widest px-2 py-1 border rounded transition-colors ${
             activeLabels.length === 0
               ? 'bg-text text-bg border-text'
               : 'border-border text-text-muted hover:border-text hover:text-text'
@@ -69,7 +69,7 @@ export function ReadingsClient({ readings, allLabels }: Props) {
           <button
             key={label}
             onClick={() => toggleLabel(label)}
-            className={`text-[10px] font-mono tracking-widest px-2 py-1 border rounded transition-colors ${
+            className={`text-xs font-mono tracking-widest px-2 py-1 border rounded transition-colors ${
               activeLabels.includes(label)
                 ? 'bg-text text-bg border-text'
                 : 'border-border text-text-muted hover:border-text hover:text-text'
@@ -95,7 +95,7 @@ export function ReadingsClient({ readings, allLabels }: Props) {
                 {reading.labels.map((label) => (
                   <span
                     key={label}
-                    className="text-[9px] font-mono tracking-widest px-1.5 py-0.5 border border-border rounded text-text-muted uppercase"
+                    className="text-[10px] font-mono tracking-widest px-1.5 py-0.5 border border-border rounded text-text-muted uppercase"
                   >
                     {label}
                   </span>

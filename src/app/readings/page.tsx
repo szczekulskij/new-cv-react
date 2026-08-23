@@ -14,7 +14,7 @@ export default function ReadingsPage() {
   ).sort();
 
   return (
-    <div className="max-w-xl mx-auto px-4 sm:px-6 py-14">
+    <div className="max-w-3xl mx-auto px-4 sm:px-8 py-14">
       <h1 className="text-3xl font-bold text-text mb-1">Readings</h1>
       <p className="text-text-muted italic text-sm mb-8">
         Papers and concepts I&apos;ve read through, with notes.

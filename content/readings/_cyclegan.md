@@ -29,4 +29,4 @@ The cycle consistency loss is simply ||F(G(x)) - x|| + ||G(F(y)) - y||
 
 ## Personal Notes
 
-I applied this to PWS birthmark research — translating between healthy faces and PWS-affected faces. The main challenge was data quality: medical images have inconsistent lighting and angles, which the model sometimes confuses with domain-specific features. Data augmentation and careful preprocessing helped significantly.
+I applied this to PWS birthmark research - translating between healthy faces and PWS-affected faces. The main challenge was data quality: medical images have inconsistent lighting and angles, which the model sometimes confuses with domain-specific features. Data augmentation and careful preprocessing helped significantly.

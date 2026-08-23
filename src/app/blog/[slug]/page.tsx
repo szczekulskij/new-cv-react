@@ -24,10 +24,10 @@ export default function BlogPost({ params }: Props) {
   const post = getPostBySlug(params.slug);
 
   return (
-    <article className="max-w-6xl mx-auto px-4 sm:px-6 py-14">
+    <article className="max-w-3xl mx-auto px-4 sm:px-8 py-14">
       <Link
         href="/blog"
-        className="inline-flex items-center text-text-muted hover:text-text mb-8 transition-colors font-mono text-[10px] tracking-widest"
+        className="inline-flex items-center text-text-muted hover:text-text mb-8 transition-colors font-mono text-xs tracking-widest"
       >
         ← BACK
       </Link>
@@ -36,7 +36,7 @@ export default function BlogPost({ params }: Props) {
         <h1 className="text-2xl font-bold text-text mb-3">
           {post.title}
         </h1>
-        <div className="flex flex-wrap items-center gap-3 text-[10px] font-mono text-text-light">
+        <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-text-light">
           <time dateTime={post.date}>
             {format(new Date(post.date), 'MMMM d, yyyy')}
           </time>

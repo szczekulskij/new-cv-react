@@ -35,4 +35,4 @@ There are entire books written on the levels of consistency and how it ties to t
 - **Safety**: A candidate can only win election if its log is at least as up-to-date as any majority of nodes.
 
 ## Personal Notes
-Implemented this for my CSE-224 Dropbox project. The trickiest part was handling network partitions correctly — specifically ensuring that a leader that gets partitioned doesn't keep serving stale reads.
+Implemented this for my CSE-224 Dropbox project. The trickiest part was handling network partitions correctly - specifically ensuring that a leader that gets partitioned doesn't keep serving stale reads.

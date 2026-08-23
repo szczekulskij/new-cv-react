@@ -28,15 +28,15 @@ export default function SeriesPage({ params }: Props) {
   }
 
   return (
-    <div className="max-w-xl mx-auto px-4 sm:px-6 py-14">
+    <div className="max-w-3xl mx-auto px-4 sm:px-8 py-14">
       <Link
         href="/series"
-        className="inline-flex items-center text-text-muted hover:text-text mb-8 transition-colors font-mono text-[10px] tracking-widest"
+        className="inline-flex items-center text-text-muted hover:text-text mb-8 transition-colors font-mono text-xs tracking-widest"
       >
         ← BACK
       </Link>
 
-      <div className="mb-2 font-mono text-[10px] tracking-widest text-accent">
+      <div className="mb-2 font-mono text-xs tracking-widest text-accent">
         SERIES
       </div>
       <h1 className="text-3xl font-bold text-text mb-2">{series.title}</h1>
@@ -64,7 +64,7 @@ export default function SeriesPage({ params }: Props) {
               className="block py-5 group"
             >
               <div className="flex items-start gap-4">
-                <span className="text-[10px] font-mono text-text-light whitespace-nowrap mt-1 w-6">
+                <span className="text-xs font-mono text-text-light whitespace-nowrap mt-1 w-6">
                   {String(post.seriesOrder).padStart(2, '0')}
                 </span>
                 <div className="flex-1">
